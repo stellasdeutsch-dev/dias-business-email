@@ -471,6 +471,45 @@ html.no-tts .vbtn,html.no-tts .vinline{display:none}
 .vfoot{display:flex;gap:10px;margin-top:14px;position:relative}
 .vfoot .btn{flex:1;justify-content:center}
 
+/* stickers */
+.sec>.wrap,.hero>.wrap{position:relative;z-index:1}
+.stk{position:absolute;z-index:0;width:clamp(62px,17vw,120px);height:auto;pointer-events:none;filter:drop-shadow(0 16px 22px rgba(31,58,110,.22));animation:flt 5s ease-in-out infinite}
+.stk.r{right:12px} .stk.l{left:10px}
+.stk.t{top:30px} .stk.b{bottom:40px}
+.stk.d2{animation-delay:-1.6s} .stk.d3{animation-delay:-3.1s}
+@keyframes flt{50%{translate:0 -12px}}
+@media(min-width:900px){ .stk.r{right:6%} .stk.l{left:4%} .stk.t{top:60px} }
+/* marquee bands */
+.band{position:relative;z-index:2;width:calc(100% + 40px);margin:6px -20px;padding:14px 0;background:var(--blue);rotate:-2deg;overflow:hidden}
+.band.b2{background:var(--orange);rotate:2deg}
+.band .track{display:flex;gap:10px;width:max-content;will-change:transform}
+.band .bc{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 18px;border-radius:999px;background:#fff;color:var(--ink);font-size:16px;white-space:nowrap}
+.band .bc i{width:10px;height:10px;border-radius:50%;background:var(--orange);flex:none}
+.band.b2 .bc i{background:var(--blue)}
+.band .bc svg{width:22px;height:22px}
+html:not(.gs) .band .track{animation:mq 40s linear infinite}
+html:not(.gs) .band.b2 .track{animation-direction:reverse}
+@keyframes mq{to{translate:-50% 0}}
+/* hero letter typing + plane */
+.letter p.typing::after{content:"";display:inline-block;width:2px;height:1em;background:var(--blue);margin-left:2px;vertical-align:-2px;animation:blink .8s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hplane{position:absolute;z-index:3;width:54px;opacity:0;animation:none;filter:drop-shadow(0 10px 14px rgba(0,0,0,.18))}
+/* date swap */
+.swap{display:flex;align-items:center;gap:12px;margin-top:22px;background:rgba(255,255,255,.08);border-radius:24px;padding:14px}
+.swap .tag{width:46px;justify-content:center;flex:none;transition:background .3s}
+.swrow{display:flex;gap:6px;font-size:clamp(20px,6vw,38px);letter-spacing:-.03em;line-height:1;flex-wrap:nowrap}
+.tok{display:inline-block;padding:6px 10px;border-radius:14px;background:rgba(255,255,255,.12)}
+.tok[data-k=d]{background:var(--blue)} .tok[data-k=m]{background:var(--yellow);color:var(--ink)}
+/* mail send */
+.mailsend{border:0;cursor:pointer}
+.menv{position:absolute;left:50%;top:40%;width:110px;margin:-55px 0 0 -55px;opacity:0;z-index:4;animation:none}
+.sent{position:absolute;left:50%;top:64px;translate:-50% 0;z-index:5;display:flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border-radius:999px;padding:10px 16px;font-size:14px;opacity:0;pointer-events:none}
+.sent.show{opacity:1}
+.sent .ic{color:#7CE3A1}
+/* scroll strike */
+.sx{background:linear-gradient(var(--ink),var(--ink)) no-repeat 0 58%/100% 4px}
+html.gs .sx{background-size:0% 4px}
+
 /* reveal */
 .rv{will-change:transform}
 html:not(.gs) .rv{transition:translate .8s var(--ease)}
@@ -484,6 +523,16 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
 <linearGradient id="sg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4A7FF8"/><stop offset=".55" stop-color="#FF7648"/><stop offset="1" stop-color="#FFC757"/></linearGradient>
+<linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9DB8FF"/><stop offset=".5" stop-color="#4A7FF8"/><stop offset="1" stop-color="#2E5BD3"/></linearGradient>
+<linearGradient id="gW" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE08A"/><stop offset=".45" stop-color="#FFC757"/><stop offset="1" stop-color="#FF7648"/></linearGradient>
+<linearGradient id="gP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD9E1"/><stop offset=".5" stop-color="#F6A5B6"/><stop offset="1" stop-color="#E0647F"/></linearGradient>
+<symbol id="st-env" viewBox="0 0 120 120"><rect x="8" y="26" width="104" height="72" rx="18" fill="url(#gB)"/><path d="M16 36 60 68l44-32" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 90 46 64M104 90 74 64" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".45"/><ellipse cx="36" cy="38" rx="18" ry="6" fill="#fff" opacity=".28"/></symbol>
+<symbol id="st-plane" viewBox="0 0 120 120"><path d="M8 58 112 12 82 106 58 74Z" fill="url(#gW)"/><path d="M58 74 112 12 46 66Z" fill="#fff" opacity=".4"/><path d="M58 74 64 100 74 82Z" fill="#E2562F"/></symbol>
+<symbol id="st-at" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="url(#gP)"/><circle cx="60" cy="60" r="15" fill="none" stroke="#fff" stroke-width="8"/><path d="M75 47v20a9 9 0 0 0 18 0v-7a33 33 0 1 0-13 26" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><ellipse cx="40" cy="30" rx="16" ry="6" fill="#fff" opacity=".35"/></symbol>
+<symbol id="st-clip" viewBox="0 0 120 120"><path d="M46 88V36a14 14 0 0 1 28 0v52a22 22 0 0 1-44 0V46" fill="none" stroke="url(#gB)" stroke-width="11" stroke-linecap="round"/></symbol>
+<symbol id="st-stamp" viewBox="0 0 120 120"><rect x="14" y="14" width="92" height="92" rx="12" fill="url(#gW)"/><rect x="14" y="14" width="92" height="92" rx="12" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray=".1 11" stroke-linecap="round"/><path transform="translate(28 28)" d="M32 8c2.6 11.6 7.4 16.6 22 24-14.6 7.4-19.4 12.4-22 24-2.6-11.6-7.4-16.6-22-24 14.6-7.4 19.4-12.4 22-24z" fill="#fff"/></symbol>
+<symbol id="st-quote" viewBox="0 0 120 120"><path d="M14 76c0-24 12-40 34-46l5 12c-11 5-17 12-17 20h14v32H14zm52 0c0-24 12-40 34-46l5 12c-11 5-17 12-17 20h14v32H66z" fill="url(#gB)"/></symbol>
+<symbol id="st-check" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="url(#gB)"/><path d="m38 62 15 15 30-32" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="42" cy="32" rx="16" ry="6" fill="#fff" opacity=".3"/></symbol>
 <symbol id="star" viewBox="0 0 64 64"><path d="M32 8c2.6 11.6 7.4 16.6 22 24-14.6 7.4-19.4 12.4-22 24-2.6-11.6-7.4-16.6-22-24 14.6-7.4 19.4-12.4 22-24z" fill="url(#sg)"/></symbol>
 </defs>
 <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
@@ -570,12 +619,13 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
       <div class="letter" aria-hidden="true">
         <div class="lh"><span class="tag t-lav">New mail</span><span>to: l.bianchi@novamedia.co.uk</span></div>
         <div class="ls">Application: Summer Internship</div>
-        <p>Dear Ms Bianchi,</p>
-        <p>I am writing to apply for the summer internship…</p>
+        <p id="lt1">Dear Ms Bianchi,</p>
+        <p id="lt2">I am writing to apply for the summer internship…</p>
         <i class="sk" style="width:92%"></i><i class="sk" style="width:76%"></i><i class="sk" style="width:84%"></i>
-        <p style="margin-top:8px">Yours sincerely,<br>Dias</p>
-        <div class="lf"><span class="small">Сегодня, 18:30</span><span class="mic"><svg class="ic"><use href="#i-send"/></svg></span></div>
+        <p style="margin-top:8px" id="lt3">Yours sincerely,<br>Dias</p>
+        <div class="lf"><span class="small">Сегодня, 18:30</span><span class="mic" id="ltSend"><svg class="ic"><use href="#i-send"/></svg></span></div>
       </div>
+      <svg class="stk hplane" id="hplane" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-plane"/></svg>
       <div class="floaters" id="floaters">
         <span class="chip c-blue f1">Dear Ms Walker<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
         <span class="chip c-yellow f2">Best regards<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
@@ -590,8 +640,11 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
   </div>
 </section>
 
+<div class="band b1" aria-hidden="true"><div class="track"><span class="bc"><i></i>Dear Ms Walker,</span><span class="bc"><i></i>I am writing to</span><span class="bc"><i></i>Please find attached</span><span class="bc"><i></i>Kind regards,</span><span class="bc"><i></i>Could you send me…?</span><span class="bc"><i></i>I look forward to hearing from you</span><span class="bc"><i></i>Yours sincerely,</span><span class="bc"><i></i>Further to your email</span><span class="bc"><i></i>Dear Ms Walker,</span><span class="bc"><i></i>I am writing to</span><span class="bc"><i></i>Please find attached</span><span class="bc"><i></i>Kind regards,</span><span class="bc"><i></i>Could you send me…?</span><span class="bc"><i></i>I look forward to hearing from you</span><span class="bc"><i></i>Yours sincerely,</span><span class="bc"><i></i>Further to your email</span></div></div>
+
 <!-- ============ ROUTE (scope of work) ============ -->
 <section class="sec" id="route">
+  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-plane"/></svg>
   <div class="wrap">
     <p class="eyebrow">Маршрут</p>
     <h2 class="h2 split-h">Что разберём <span class="hi">за 8 минут</span></h2>
@@ -614,6 +667,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ INSIGHTS ============ -->
 <section class="sec dark" id="insights">
+  <svg class="stk r t px d2" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-quote"/></svg>
   <div class="wrap">
     <p class="eyebrow">Инсайты</p>
     <h2 class="h2 split-h">Три вещи, после которых <span style="color:#9DB8FF">письма пишутся сами</span></h2>
@@ -643,6 +697,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ ANATOMY ============ -->
 <section class="sec cream" id="anatomy">
+  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-env"/></svg>
   <div class="wrap split">
     <div>
       <p class="eyebrow">Скелет письма</p>
@@ -669,11 +724,13 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ DATE ============ -->
 <section class="sec navy" id="date">
+  <svg class="stk r t px d3" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-stamp"/></svg>
   <div class="wrap split rev">
     <div>
       <p class="eyebrow">Дата</p>
       <h2 class="h2 split-h">Одна дата. <span style="color:var(--yellow)">Два мира.</span></h2>
       <p class="lede">Британец пишет число, потом месяц. Американец наоборот. Тыкни в любой день календаря.</p>
+      <div class="swap rv" id="swap"><span class="tag t-blue" id="swTag">UK</span><div class="swrow" id="swrow"><span class="tok" data-k="d">20</span><span class="tok" data-k="m">November</span><span class="tok" data-k="y">2026</span></div></div>
       <div class="trap">
         <div class="trapcard rv">
           <span class="small" style="color:rgba(255,255,255,.6)">Ловушка</span>
@@ -702,6 +759,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ SALUTATION ============ -->
 <section class="sec" id="salute">
+  <svg class="stk r t px d2" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-at"/></svg>
   <div class="wrap split">
     <div>
       <p class="eyebrow">Обращение</p>
@@ -725,9 +783,10 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ OPENING ============ -->
 <section class="sec cream" id="open">
+  <svg class="stk r b px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-quote"/></svg>
   <div class="wrap">
     <p class="eyebrow">Первая фраза</p>
-    <h2 class="h2 split-h">Забудь <span class="hi-o">«I hope this email finds you well»</span></h2>
+    <h2 class="h2 split-h">Забудь <span class="hi-o sx">«I hope this email finds you well»</span></h2>
     <p class="lede">Это вода. Первая строка сразу говорит, зачем ты пишешь. Выбери ситуацию.</p>
     <button class="vinline" type="button" data-vopen><svg class="ic"><use href="#i-volume-2"/></svg>Голос: <b class="vcur">по умолчанию</b><span class="go">Сменить</span></button>
     <div class="tabs" id="otabs"></div>
@@ -737,6 +796,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ BODY ============ -->
 <section class="sec" id="body">
+  <svg class="stk r t px d3" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-clip"/></svg>
   <div class="wrap">
     <p class="eyebrow">Основная часть</p>
     <h2 class="h2 split-h">Суть <span class="hi">без лирики.</span></h2>
@@ -763,6 +823,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ CLOSING ============ -->
 <section class="sec cream" id="close">
+  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-check"/></svg>
   <div class="wrap split rev">
     <div>
       <p class="eyebrow">Финал и подпись</p>
@@ -792,6 +853,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ TIPS treemap ============ -->
 <section class="sec" id="tips">
+  <svg class="stk r t px d2" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-plane"/></svg>
   <div class="wrap">
     <p class="eyebrow">Правила тона</p>
     <h2 class="h2 split-h">Шесть правил, <span class="hi">которые видно сразу</span></h2>
@@ -821,6 +883,8 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
       <div class="scr">
         <div class="sbar"><span>9:41</span><i><b></b></i></div>
         <div class="mailhd"><span class="tag t-lav">Inbox · Sent</span><div class="r"><span>To:</span><span>l.bianchi@novamedia.co.uk</span></div><div class="s">Application: Summer Internship</div></div>
+        <div class="sent" id="sent" role="status"><svg class="ic"><use href="#i-circle-check"/></svg>Отправлено</div>
+        <svg class="stk menv" id="menv" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-env"/></svg>
         <div class="mailbody" id="mailbody">
           <p data-b="0"><span class="en">Dear Ms Bianchi,</span><span class="ru">Уважаемая госпожа Бьянки,</span></p>
           <p data-b="1"><span class="en">I am writing to apply for the summer internship posted on your website.</span><span class="ru">Пишу, чтобы откликнуться на летнюю стажировку с вашего сайта.</span></p>
@@ -829,7 +893,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
           <p data-b="4"><span class="en">I look forward to hearing from you.</span><span class="ru">Жду вашего ответа.</span></p>
           <p data-b="5"><span class="en">Yours sincerely,<br>Dias</span><span class="ru">С уважением,<br>Диас</span></p>
         </div>
-        <div class="mailbar"><div class="seg" id="lang"><button type="button" class="on" data-l="en">EN</button><button type="button" data-l="ru">RU</button></div><button class="say" type="button" id="mailSay" aria-label="Послушать письмо" style="margin-left:auto"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="mic" style="width:44px;height:44px"><svg class="ic"><use href="#i-send"/></svg></span></div>
+        <div class="mailbar"><div class="seg" id="lang"><button type="button" class="on" data-l="en">EN</button><button type="button" data-l="ru">RU</button></div><button class="say" type="button" id="mailSay" aria-label="Послушать письмо" style="margin-left:auto"><svg class="ic"><use href="#i-volume-2"/></svg></button><button class="mic mailsend" type="button" id="mailSend" aria-label="Отправить письмо" style="width:44px;height:44px"><svg class="ic"><use href="#i-send"/></svg></button></div>
       </div>
     </div>
   </div>
@@ -850,6 +914,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ PRACTICE ============ -->
 <section class="sec cream" id="practice">
+  <svg class="stk r t px d3" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-env"/></svg>
   <div class="wrap">
     <p class="eyebrow">Практика</p>
     <h2 class="h2 split-h">Теперь ты. <span class="hi">Два упражнения.</span></h2>
@@ -863,8 +928,11 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
   </div>
 </section>
 
+<div class="band b2" aria-hidden="true"><div class="track"><span class="bc"><i></i>To whom it may concern</span><span class="bc"><i></i>We regret to inform you</span><span class="bc"><i></i>I would be grateful if</span><span class="bc"><i></i>Best regards,</span><span class="bc"><i></i>Thank you for your email</span><span class="bc"><i></i>Please do not hesitate</span><span class="bc"><i></i>Yours faithfully,</span><span class="bc"><i></i>We suggest</span><span class="bc"><i></i>To whom it may concern</span><span class="bc"><i></i>We regret to inform you</span><span class="bc"><i></i>I would be grateful if</span><span class="bc"><i></i>Best regards,</span><span class="bc"><i></i>Thank you for your email</span><span class="bc"><i></i>Please do not hesitate</span><span class="bc"><i></i>Yours faithfully,</span><span class="bc"><i></i>We suggest</span></div></div>
+
 <!-- ============ CHEAT ============ -->
 <section class="sec" id="cheat">
+  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-clip"/></svg>
   <div class="wrap">
     <p class="eyebrow">Шпаргалка</p>
     <h2 class="h2 split-h">Сохрани <span class="hi">скриншотом</span></h2>
@@ -993,7 +1061,8 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 function xInit(){
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var G = window.gsap && window.ScrollTrigger ? window.gsap : null;
-  if(G){ try{ G.registerPlugin(ScrollTrigger); window.SplitText && G.registerPlugin(SplitText); }catch(e){ G = null; } }
+  if(G){ try{ G.registerPlugin(ScrollTrigger); window.SplitText && G.registerPlugin(SplitText); window.MotionPathPlugin && G.registerPlugin(MotionPathPlugin); }catch(e){ G = null; } }
+  var MP = !!(window.gsap && window.MotionPathPlugin);
   if(G && reduce) G = null;
   if(G){ document.documentElement.classList.add('gs'); ScrollTrigger.config({ignoreMobileResize:true}); }
   var ST = G && window.SplitText;
@@ -1129,6 +1198,69 @@ function xInit(){
       if(G){ G.killTweensOf(c); G.fromTo(c, {y:-60, scale:.5, rotation:0}, {y:0, scale:1, duration:.9, ease:'elastic.out(1,.5)'}); }
     });
   });
+
+  /* ---------- hero letter: types itself, then a plane flies off ---------- */
+  var stage = $('#stage'), lt1 = $('#lt1'), lt2 = $('#lt2'), lt3 = $('#lt3'), lsend = $('#ltSend'), hplane = $('#hplane');
+  if(G && stage){
+    var T1 = lt1.textContent, T2 = lt2.textContent, sks = $$('.letter .sk');
+    function typeTo(el, text, dur){ var o = {n:0}; return G.to(o, {n:text.length, duration:dur, ease:'none', onStart:function(){ el.classList.add('typing'); }, onUpdate:function(){ el.textContent = text.slice(0, Math.round(o.n)); }, onComplete:function(){ el.classList.remove('typing'); }}); }
+    function flyPlane(){
+      var sr = stage.getBoundingClientRect(), br = lsend.getBoundingClientRect();
+      var x0 = br.left - sr.left - 6, y0 = br.top - sr.top - 6;
+      G.set(hplane, {left:x0, top:y0, x:0, y:0, opacity:1, scale:.5, rotation:-10});
+      var path = [{x:0, y:0}, {x:-sr.width * .35, y:-sr.height * .35}, {x:-sr.width * .1, y:-sr.height * .7}, {x:sr.width * .25, y:-sr.height * .95}];
+      if(MP) G.to(hplane, {motionPath:{path:path, curviness:1.4, autoRotate:30}, scale:1, duration:2.2, ease:'power1.inOut'});
+      else G.to(hplane, {x:sr.width * .25, y:-sr.height * .9, duration:2, ease:'power1.inOut'});
+      G.to(hplane, {opacity:0, duration:.5, delay:1.8});
+    }
+    var htl = G.timeline({paused:true, repeat:-1, repeatDelay:1.4});
+    htl.call(function(){ lt1.textContent = ''; lt2.textContent = ''; })
+       .set(sks, {scaleX:0, transformOrigin:'left center'}).set(lt3, {opacity:0})
+       .add(typeTo(lt1, T1, .8), '+=.4')
+       .add(typeTo(lt2, T2, 1.6), '+=.15')
+       .to(sks, {scaleX:1, duration:.45, ease:'power2.out', stagger:.15})
+       .to(lt3, {opacity:1, duration:.4})
+       .to(lsend, {scale:1.25, duration:.18, yoyo:true, repeat:1, ease:'power2.out'}, '+=.3')
+       .call(flyPlane)
+       .to({}, {duration:2.6});
+    whenVisible(stage, function(){ htl.play(); }, function(){ htl.pause(); }, .2);
+  }
+
+  /* ---------- marquee bands ---------- */
+  $$('.band').forEach(function(b, i){
+    if(!G) return;
+    var tr = $('.track', b), rev = i % 2 === 1;
+    var tw = G.fromTo(tr, {xPercent:rev ? -50 : 0}, {xPercent:rev ? 0 : -50, duration:38, ease:'none', repeat:-1});
+    ScrollTrigger.create({trigger:b, start:'top bottom', end:'bottom top', onToggle:function(st){ st.isActive ? tw.play() : tw.pause(); }, onUpdate:function(st){
+      var v = st.getVelocity();
+      G.to(tr, {skewX:G.utils.clamp(-10, 10, v / -150), duration:.35, overwrite:'auto'});
+      G.to(tw, {timeScale:1 + Math.min(4, Math.abs(v) / 600), duration:.2, overwrite:true, onComplete:function(){ G.to(tw, {timeScale:1, duration:1}); }});
+    }});
+  });
+
+  /* ---------- sticker parallax ---------- */
+  if(G) $$('.stk.px').forEach(function(st, i){
+    var sec = st.parentNode;
+    G.fromTo(st, {y:50, rotation:i % 2 ? -14 : 12}, {y:-50, rotation:i % 2 ? 10 : -10, ease:'none', scrollTrigger:{trigger:sec, start:'top bottom', end:'bottom top', scrub:1}});
+    G.from(st, {scale:.4, duration:.9, ease:'back.out(2.5)', scrollTrigger:{trigger:sec, start:'top 80%', once:true}});
+  });
+
+  /* ---------- date swap UK <-> US ---------- */
+  var swrow = $('#swrow'), swTag = $('#swTag'), swUS = false, swTimer = null;
+  function swapDate(){
+    var toks = $$('.tok', swrow), d = toks.find(function(t){ return t.dataset.k === 'd'; }), m = toks.find(function(t){ return t.dataset.k === 'm'; }), y = toks.find(function(t){ return t.dataset.k === 'y'; });
+    var first = toks.map(function(t){ return t.getBoundingClientRect(); });
+    swUS = !swUS;
+    d.textContent = swUS ? DAYSEL + ',' : DAYSEL;
+    if(swUS){ swrow.appendChild(m); swrow.appendChild(d); } else { swrow.appendChild(d); swrow.appendChild(m); }
+    swrow.appendChild(y);
+    swTag.textContent = swUS ? 'US' : 'UK'; swTag.className = 'tag ' + (swUS ? '' : 't-blue');
+    if(G) toks.forEach(function(t, k){ var l = t.getBoundingClientRect(), dx = first[k].left - l.left; if(Math.abs(dx) < 1) return; G.fromTo(t, {x:dx, y:0}, {keyframes:{y:[0, t.dataset.k === 'm' ? -26 : 26, 0]}, x:0, duration:.8, ease:'power3.inOut'}); });
+  }
+  whenVisible($('#swap'), function(){ if(!swTimer) swTimer = setInterval(swapDate, 2400); }, function(){ clearInterval(swTimer); swTimer = null; }, .5);
+
+  /* ---------- strike "I hope this email finds you well" ---------- */
+  if(G) $$('.sx').forEach(function(x){ G.to(x, {backgroundSize:'100% 4px', ease:'none', scrollTrigger:{trigger:x, start:'top 80%', end:'top 35%', scrub:.6}}); });
 
   /* ---------- gantt ---------- */
   if(G) $$('.gantt').forEach(function(g){
@@ -1333,6 +1465,21 @@ function xInit(){
   litM(0);
   $$('#lang button').forEach(function(b){ b.addEventListener('click', function(){ $$('#lang button').forEach(function(x){ x.classList.toggle('on', x === b); }); $('#mail').classList.toggle('ru', b.dataset.l === 'ru'); }); });
   $('#mailSay').addEventListener('click', function(){ say($$('#mailbody .en').map(function(e){ return e.textContent; }).join(' '), this); });
+
+  /* ---------- mail send ---------- */
+  var mailSend = $('#mailSend'), menv = $('#menv'), sent = $('#sent'), mbody = $('#mailbody'), sending = false;
+  mailSend.addEventListener('click', function(){
+    if(sending) return; sending = true;
+    if(!G){ sent.classList.add('show'); setTimeout(function(){ sent.classList.remove('show'); sending = false; }, 1600); return; }
+    var tl = G.timeline({onComplete:function(){ sending = false; }});
+    tl.to(mbody, {scale:.25, y:-60, opacity:0, transformOrigin:'50% 20%', duration:.5, ease:'power2.in'})
+      .fromTo(menv, {scale:.3, opacity:0, x:0, y:0, rotation:0}, {scale:1, opacity:1, duration:.35, ease:'back.out(3)'})
+      .to(menv, MP ? {motionPath:{path:[{x:0, y:0}, {x:-60, y:-80}, {x:80, y:-220}, {x:240, y:-360}], curviness:1.4, autoRotate:false}, rotation:25, scale:.5, duration:1, ease:'power2.in'} : {x:240, y:-360, rotation:25, scale:.5, duration:1, ease:'power2.in'})
+      .set(menv, {opacity:0})
+      .fromTo(sent, {y:-24, opacity:0}, {y:0, opacity:1, duration:.4, ease:'back.out(2)'}, '-=.5')
+      .to(mbody, {scale:1, y:0, opacity:1, duration:.6, ease:'power3.out'}, '+=.6')
+      .to(sent, {opacity:0, y:-10, duration:.3}, '+=.4');
+  });
 
   /* ---------- youtube lite ---------- */
   var yt = $('#yt');
