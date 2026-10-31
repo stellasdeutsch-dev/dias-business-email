@@ -1,0 +1,1362 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Структура, обращения, даты UK и US, фразы и упражнения. Гайд от Диаса из Рима.">
+<meta property="og:title" content="Деловое письмо на английском · гайд Диаса">
+<meta property="og:description" content="Структура, обращения, даты UK и US, фразы и упражнения. Гайд от Диаса из Рима.">
+<meta name="theme-color" content="#F0EFEB">
+<link rel="icon" href="../media/star.svg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Деловое письмо на английском · гайд Диаса</title>
+<link rel="preload" href="../assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+</style>
+<script defer src="../assets/gsap-bundle.min.js"></script>
+
+<style>
+:root{
+  --bg:#FFFFFF; --cream:#F0EFEB; --cream-2:#E7E5DF; --ink:#202020; --ink-2:#4A4A48; --mute:#8A8984; --line:#E1DFD8;
+  --blue:#4A7FF8; --blue-2:#7E9EF8; --lav:#DDE5FF; --navy:#1F3A6E; --orange:#FF7648; --yellow:#FFC757; --sand:#FFE3A6;
+  --pink:#F6A5B6; --maroon:#8E2B2B; --red:#F2554B; --violet:#8B6FE0; --peach:#FFB79A;
+  --r:32px; --gut:16px; --max:1180px;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.5 'Onest',system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:-.005em;-webkit-font-smoothing:antialiased}
+main{overflow-x:clip}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;-webkit-tap-highlight-color:transparent}
+.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+section{position:relative}
+.sec{padding:84px 0}
+.sec.cream{background:var(--cream)}
+.sec.dark{background:#141414;color:#fff}
+.sec.navy{background:var(--navy);color:#fff}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 14px;display:flex;align-items:center;gap:8px}
+.sec.dark .eyebrow,.sec.navy .eyebrow{color:#9DB8FF}
+.h1,.h2{font-weight:400;letter-spacing:-.045em;line-height:1.02;margin:0}
+.h1{font-size:clamp(40px,11.4vw,96px)}
+.h2{font-size:clamp(32px,8.6vw,64px);max-width:15ch}
+.h2 .wd,.h1 .wd{display:inline-block}
+.hi{color:var(--blue)} .hi-o{color:var(--orange)} .hi-y{color:#E9A21C}
+.lede{font-size:clamp(17px,4.4vw,21px);line-height:1.45;color:var(--ink-2);margin:22px 0 0;max-width:34ch;font-weight:300}
+.sec.dark .lede,.sec.navy .lede{color:rgba(255,255,255,.72)}
+.small{font-size:13px;color:var(--mute)}
+.split{display:grid;gap:36px}
+@media(min-width:900px){ .split{grid-template-columns:1fr 1fr;align-items:center;gap:56px} .split.rev>:first-child{order:2} .sec{padding:120px 0} }
+
+/* buttons, chips, tags */
+.btn{display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 24px;border-radius:999px;background:var(--blue);color:#fff;font-weight:500;font-size:16px;text-decoration:none;transition:scale .25s var(--ease),background .2s}
+.btn:active{scale:.96}
+.btn.light{background:#fff;color:var(--ink);box-shadow:0 1px 0 rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.06)}
+.btn.ink{background:var(--ink)}
+.btn.orange{background:var(--orange)}
+.btn .ic{font-size:18px}
+.mic{width:54px;height:54px;border-radius:50%;background:var(--blue);color:#fff;display:inline-grid;place-items:center;flex:none}
+.mic .ic{font-size:22px}
+.mic.on{animation:pulse 1s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 10px rgba(74,127,248,.18)}}
+.chip{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 6px 0 18px;border-radius:999px;font-size:16px;white-space:nowrap;color:#fff;background:var(--blue-2)}
+.chip .cx{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center}
+.chip .cx .ic{font-size:16px;stroke-width:2.4}
+.chip.c-yellow{background:var(--yellow);color:var(--ink)} .chip.c-pink{background:var(--pink);color:var(--ink)} .chip.c-orange{background:var(--orange)} .chip.c-blue{background:var(--blue-2)}
+.chip.c-yellow .cx,.chip.c-pink .cx{box-shadow:0 0 0 2px rgba(255,255,255,.6)}
+.tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border-radius:999px;font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:var(--orange);white-space:nowrap}
+.tag.t-violet{background:var(--violet)} .tag.t-maroon{background:var(--maroon)} .tag.t-red{background:var(--red)} .tag.t-blue{background:var(--blue)} .tag.t-navy{background:var(--navy)}
+.tag.t-lav{background:var(--lav);color:var(--blue)} .tag.t-peach{background:#FFE1D4;color:#D9532A} .tag.t-sand{background:var(--sand);color:#9A6A00}
+.pillrow{display:flex;flex-wrap:wrap;gap:10px}
+.opt{height:48px;padding:0 20px;border-radius:999px;background:#fff;font-size:16px;box-shadow:0 1px 2px rgba(0,0,0,.05);transition:background .2s,color .2s,scale .2s var(--ease)}
+.opt:active{scale:.95}
+.opt.on{background:var(--yellow)}
+.seg{display:inline-flex;background:var(--cream);border-radius:999px;padding:4px;gap:2px}
+.seg button{height:40px;padding:0 18px;border-radius:999px;font-size:15px;color:var(--ink-2);transition:background .25s,color .25s}
+.seg button.on{background:var(--blue);color:#fff}
+.say{width:34px;height:34px;border-radius:50%;background:var(--lav);color:var(--blue);display:inline-grid;place-items:center;flex:none}
+.say .ic{font-size:16px}
+.say.on{background:var(--blue);color:#fff}
+html.no-tts .say,html.no-tts .mic[data-say]{display:none}
+
+/* top bar + tab bar */
+.topbar{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid rgba(0,0,0,.05)}
+@media(min-width:900px){ .topbar{background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px)} }
+.topbar .wrap{display:flex;align-items:center;gap:12px;height:58px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:500;font-size:16px;text-decoration:none;letter-spacing:-.02em}
+.brand svg{width:28px;height:28px}
+.topbar .who{margin-left:auto;font-size:13px;color:var(--mute)}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--blue);transform-origin:left;transform:scaleX(0)}
+.tabbar{position:fixed;left:50%;bottom:calc(12px + env(safe-area-inset-bottom,0px));translate:-50% 0;z-index:50;display:flex;gap:2px;padding:6px;background:#fff;border-radius:999px;box-shadow:0 10px 40px rgba(0,0,0,.14),0 0 0 1px rgba(0,0,0,.04);transition:translate .45s var(--ease),opacity .3s}
+.tabbar.hide{translate:-50% 140%;opacity:0}
+.tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:72px;height:54px;border-radius:999px;font-size:11px;text-decoration:none;color:var(--ink-2);transition:background .25s,color .25s}
+.tabbar a .ic{font-size:19px}
+.tabbar a.on{background:var(--blue);color:#fff}
+.tabbar a.stl{color:var(--blue)}
+.tabbar a.stl.on{color:#fff}
+
+/* gradient arc (Niva) */
+.arc{position:absolute;pointer-events:none;border-radius:50%;filter:blur(26px);opacity:.95;
+  background:conic-gradient(from 200deg at 50% 50%,#4A7FF8 0deg,#7E9EF8 40deg,#FF7648 120deg,#FFC757 190deg,#FFE3A6 230deg,#4A7FF8 360deg)}
+.arc::after{content:"";position:absolute;inset:16%;border-radius:50%;background:inherit;filter:blur(10px);opacity:0}
+.mask-arc{position:absolute;inset:0;overflow:hidden;border-radius:inherit;pointer-events:none}
+
+/* hero */
+.hero{padding:34px 0 0;overflow:hidden}
+.hero .wrap{position:relative}
+.hero-top{position:relative;z-index:3}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.meta .tag{height:30px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:26px}
+.stage{position:relative;height:clamp(400px,108vw,640px);margin-top:18px}
+.stage .arc{width:150%;aspect-ratio:1;left:-25%;top:42%}
+.stage .letter{position:absolute;left:50%;bottom:12%;width:min(78%,360px);translate:-50% 0;z-index:2;background:#fff;border-radius:30px;padding:18px 18px 16px;box-shadow:0 30px 60px rgba(31,58,110,.18);font-size:13.5px;line-height:1.45}
+.letter .lh{display:flex;align-items:center;gap:8px;color:var(--mute);font-size:12px;border-bottom:1px solid #F0EEE9;padding-bottom:10px}
+.letter .lh .tag{height:22px;font-size:10.5px}
+.letter .ls{font-size:16px;letter-spacing:-.01em;margin:10px 0 8px}
+.letter p{margin:0 0 6px}
+.letter .sk{display:block;height:8px;border-radius:4px;background:var(--cream);margin:7px 0}
+.letter .lf{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.letter .lf .mic{width:42px;height:42px}
+.letter .lf .mic .ic{font-size:18px}
+.floaters{position:absolute;inset:0;z-index:3}
+.floaters>*{position:absolute}
+.f1{left:0;top:0} .f2{right:0;top:9%} .f3{right:0;top:56%} .f4{left:0;top:67%} .f5{left:3%;top:19%} .f6{right:5%;top:31%} .f7{left:5%;top:43%}
+@media(max-width:600px){ .floaters .chip{height:38px;font-size:14px;padding-left:14px} .floaters .chip .cx{width:28px;height:28px} .floaters .evcard{min-width:0;max-width:200px;padding:10px;gap:10px} .floaters .evcard .av{width:40px;font-size:18px} .floaters .evcard b{font-size:14px} }
+.evcard{display:flex;gap:14px;align-items:stretch;background:var(--cream);border-radius:24px;padding:14px;min-width:220px;max-width:280px;box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.evcard .tx{display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
+.evcard b{font-weight:400;font-size:16px;line-height:1.2}
+.evcard .tm{font-size:13px;color:var(--mute)}
+.evcard .av{width:52px;border-radius:14px;display:grid;place-items:center;font-size:24px;color:var(--ink);flex:none}
+.f8{right:0;bottom:3%;z-index:4}
+.restore{position:absolute;left:50%;top:34%;translate:-50% 0;z-index:4;opacity:0;pointer-events:none;transition:opacity .3s}
+.restore.show{opacity:1;pointer-events:auto}
+@media(min-width:900px){
+  .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:end}
+  .hero-top{padding-bottom:120px}
+  .hero .h1{font-size:clamp(48px,5.6vw,80px)}
+  .stage{height:680px;margin:0}
+}
+
+/* phone */
+.phone{position:relative;width:min(340px,100%);margin:0 auto;border-radius:52px;background:#111;padding:11px;box-shadow:0 40px 80px rgba(20,30,60,.18)}
+.phone .scr{position:relative;border-radius:42px;background:#fff;color:var(--ink);overflow:hidden;height:640px;display:flex;flex-direction:column}
+.phone .island{position:absolute;top:12px;left:50%;translate:-50% 0;width:100px;height:28px;border-radius:20px;background:#111;z-index:5}
+.sbar{display:flex;justify-content:space-between;align-items:center;padding:16px 26px 6px;font-size:14px;font-weight:500;flex:none}
+.sbar i{display:inline-flex;gap:4px;align-items:center}
+.sbar i b{display:inline-block;width:18px;height:9px;border-radius:3px;background:#111}
+.dots{display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 22px;font-size:12px;color:var(--blue);flex:none}
+.dots .back,.dots .close{color:var(--blue);font-size:18px}
+.dots .back{margin-right:auto} .dots .close{margin-left:auto}
+.dots .bar{display:flex;gap:5px;align-items:center}
+.dots .bar i{width:5px;height:5px;border-radius:3px;background:var(--blue);opacity:.35;transition:width .4s var(--ease),opacity .3s}
+.dots .bar i.on{width:30px;opacity:1}
+.scr .grad{position:absolute;left:-30%;right:-30%;bottom:-48%;height:80%;border-radius:50%;filter:blur(22px);background:conic-gradient(from 180deg,#4A7FF8,#7E9EF8 15%,#FF7648 45%,#FFC757 70%,#FFE9BC 85%,#4A7FF8);opacity:.95;pointer-events:none}
+
+/* gantt */
+.gantt{background:var(--cream);border-radius:var(--r);padding:28px 18px 24px;position:relative;overflow:hidden}
+.gantt h3{font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0 0 22px 6px}
+.gscale{display:grid;grid-template-columns:repeat(5,1fr);font-size:12px;color:var(--mute);letter-spacing:.08em;text-align:center;margin-bottom:10px}
+.grows{position:relative;display:flex;flex-direction:column;gap:10px}
+.grows::before{content:"";position:absolute;inset:-6px 0;background:repeating-linear-gradient(90deg,transparent 0 calc(20% - 1px),var(--line) calc(20% - 1px) 20%);pointer-events:none}
+.grow{position:relative;display:flex;padding-left:calc(var(--o,0%) * .5)}
+.grow .gbar{min-width:62%}
+@media(min-width:700px){ .grow{padding-left:var(--o,0%)} .grow .gbar{min-width:38%} }
+.gbar{display:flex;align-items:center;justify-content:space-between;gap:10px;height:50px;padding:0 6px 0 16px;border-radius:999px;background:#fff;text-decoration:none;font-size:15px;box-shadow:0 1px 2px rgba(0,0,0,.04);transform-origin:left center;min-width:0;transition:background .25s}
+.gbar span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gbar .dur{flex:none;height:30px;padding:0 12px;border-radius:999px;background:var(--blue);color:#fff;font-size:13px;display:grid;place-items:center}
+.gbar:hover{background:#FAFAF8}
+.gbar.done .dur{background:var(--orange)}
+
+/* insights */
+.ins-row{display:grid;gap:14px;margin-top:40px}
+@media(min-width:900px){ .ins-row{grid-template-columns:repeat(3,1fr)} }
+.insight{background:#fff;color:var(--ink);border-radius:var(--r);padding:26px 22px 26px;text-align:center;display:flex;flex-direction:column;align-items:center;min-height:430px;position:relative;overflow:hidden}
+.insight .k{font-size:12px;letter-spacing:.12em;color:var(--ink-2);text-transform:uppercase}
+.insight h3{font-weight:400;font-size:24px;line-height:1.15;letter-spacing:-.03em;margin:12px 0 0;max-width:16ch}
+.insight .num{font-size:150px;line-height:.9;letter-spacing:-.07em;color:var(--blue);margin-top:auto;font-weight:300}
+.insight .cap{font-size:12px;letter-spacing:.1em;color:var(--blue);text-transform:uppercase;margin-top:8px}
+.insight.warm{background:linear-gradient(180deg,#FFF6E4 0%,#fff 60%)}
+.insight.warm .num,.insight.warm .cap{color:#E08A2E}
+.insight .ring{width:150px;height:150px;margin-top:auto}
+.insight .ring circle{fill:none;stroke-width:22}
+
+/* anatomy letter */
+.letterwrap{position:relative}
+.paper{background:#fff;border-radius:28px;padding:22px 18px 26px;box-shadow:0 30px 70px rgba(31,58,110,.12);font-size:13.5px;line-height:1.5;position:relative;z-index:2}
+.lb{position:relative;display:block;width:100%;text-align:left;border-radius:14px;padding:7px 10px 7px 34px;margin:2px 0;transition:background .25s,box-shadow .25s;font-family:inherit}
+.lb .n{position:absolute;left:6px;top:8px;width:20px;height:20px;border-radius:50%;background:var(--cream);color:var(--ink-2);font-size:11px;display:grid;place-items:center;transition:background .25s,color .25s}
+.lb.on{background:var(--lav)}
+.lb.on .n{background:var(--blue);color:#fff}
+.lb.right{text-align:right;padding:7px 34px 7px 10px}
+.lb.right .n{left:auto;right:6px}
+.lb .ln{display:block}
+.lb .gap{display:block;height:8px}
+.info{margin-top:18px;background:var(--cream);border-radius:24px;padding:20px;display:flex;gap:14px;align-items:flex-start;min-height:128px}
+.info .big{width:46px;height:46px;border-radius:14px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:20px;flex:none}
+.info h4{margin:0;font-weight:500;font-size:17px}
+.info h4 small{font-weight:400;color:var(--mute);font-size:13px;margin-left:6px}
+.info p{margin:4px 0 0;color:var(--ink-2);font-size:15px}
+.ukus{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0 18px}
+
+/* calendar */
+.cal .scr{height:600px}
+.calhead{display:flex;align-items:center;justify-content:space-between;padding:4px 18px 0}
+.calhead .seg button{height:32px;padding:0 12px;font-size:13px}
+.calhead .ib{width:34px;height:34px;display:grid;place-items:center;font-size:18px;color:var(--ink)}
+.mon{display:flex;align-items:center;justify-content:space-between;padding:14px 22px 6px}
+.mon b{font-weight:400;font-size:32px;letter-spacing:-.03em}
+.mon span{display:flex;gap:16px;font-size:18px}
+.wk,.days{display:grid;grid-template-columns:repeat(7,1fr);padding:0 12px;text-align:center}
+.wk{font-size:12px;color:var(--ink-2);padding-top:6px;padding-bottom:4px}
+.days button{height:46px;display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:6px;font-size:13px;border-top:1px solid #F1F0EC}
+.days button.mute{color:#C9C7C1}
+.days button i{display:block;width:20px;height:4px;border-radius:2px}
+.days button em{display:grid;place-items:center;width:24px;height:24px;margin-top:-3px;border-radius:50%;font-style:normal;transition:background .2s,color .2s}
+.days button.sel em{background:var(--ink);color:#fff}
+.datebox{margin:auto 14px 14px;background:var(--cream);border-radius:22px;padding:14px 16px;display:grid;gap:8px}
+.datebox .row{display:flex;align-items:center;gap:10px;font-size:15px}
+.datebox .row .tag{width:44px;justify-content:center}
+.datebox .row b{font-weight:500}
+.trap{display:grid;gap:12px;margin-top:22px}
+.trapcard{background:rgba(255,255,255,.08);border-radius:24px;padding:20px}
+.trapcard .big{font-size:44px;letter-spacing:-.04em;line-height:1}
+.trapcard .two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.trapcard .two div{background:rgba(255,255,255,.1);border-radius:16px;padding:12px;font-size:14px}
+.trapcard .two b{display:block;font-weight:400;font-size:18px;margin-top:4px}
+
+/* salutation chat */
+.sal .scr{background:#fff;height:660px}
+.salchat{flex:1;overflow:auto;padding:4px 18px 10px;display:flex;flex-direction:column;gap:12px;scrollbar-width:none}
+.salchat::-webkit-scrollbar{display:none}
+.bot{font-size:16.5px;line-height:1.35;max-width:94%}
+.bot .hl{color:var(--blue)}
+.bot .res{display:block;font-size:22px;letter-spacing:-.02em;color:var(--ink);margin:6px 0 2px}
+.bot .why{display:block;font-size:13.5px;color:var(--ink-2)}
+.me{align-self:flex-end;background:var(--yellow);border-radius:999px;padding:12px 20px;font-size:16px}
+.salopts{display:flex;flex-wrap:wrap;gap:8px}
+.salopts .opt{height:42px;padding:0 16px;font-size:14.5px;background:#fff;box-shadow:0 0 0 1px #ECEAE4}
+.salopts .opt.on{background:var(--yellow);box-shadow:none}
+.ask{display:flex;align-items:center;gap:10px;margin:0 12px 14px;background:#F6F5F2;border-radius:999px;padding:6px 6px 6px 20px;font-size:15px;color:var(--mute)}
+.ask .mic{width:46px;height:46px;margin-left:auto}
+
+/* phrase bank */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px var(--gut) 10px;margin:26px calc(-1*var(--gut)) 0;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs .opt{flex:none}
+.phrases{display:grid;gap:10px;margin-top:10px}
+@media(min-width:900px){ .phrases{grid-template-columns:1fr 1fr} }
+.ph{background:#fff;border-radius:22px;padding:16px 16px 16px 18px;display:flex;gap:12px;align-items:flex-start}
+.ph .tx{flex:1;min-width:0}
+.ph .en{font-size:17px;line-height:1.3;letter-spacing:-.01em}
+.ph .ru{font-size:14px;color:var(--mute);margin-top:4px}
+
+/* water remover */
+.water{background:#fff;border-radius:var(--r);padding:24px 20px;box-shadow:0 20px 60px rgba(0,0,0,.06)}
+.water .k{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.wtext{font-size:clamp(20px,5.6vw,28px);line-height:1.35;letter-spacing:-.02em;margin:14px 0 18px}
+.wtext{overflow:hidden}
+.wtext .del{transition:opacity .45s,color .3s;text-decoration-color:var(--red)}
+.wtext .del.strike{color:var(--red);text-decoration:line-through}
+.wtext .del.fade{opacity:0}
+.wtext .del.gone{display:none}
+.wtext .add{display:none;color:var(--blue)}
+.wtext .add.in{display:inline}
+.split>*{min-width:0}
+.wmeter{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink-2)}
+.wmeter .bar{flex:1;height:8px;border-radius:4px;background:var(--cream);overflow:hidden}
+.wmeter .bar i{display:block;height:100%;width:100%;background:var(--orange);border-radius:4px;transform-origin:left;transition:transform .9s var(--ease),background .3s}
+.wnav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+
+/* rewrite cards */
+.rw{display:grid;gap:12px;margin-top:22px}
+@media(min-width:900px){ .rw{grid-template-columns:repeat(3,1fr)} }
+.flipc{perspective:900px;height:150px}
+@media(min-width:900px){ .flipc{height:190px} }
+.flipc .in{position:relative;height:100%;transition:transform .7s var(--ease);transform-style:preserve-3d}
+.flipc.on .in{transform:rotateY(180deg)}
+.flipc .fa,.flipc .fb{position:absolute;inset:0;border-radius:26px;padding:20px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;justify-content:space-between;text-align:left}
+.flipc .fa{background:#FFE1D4}
+.flipc .fb{background:var(--blue);color:#fff;transform:rotateY(180deg)}
+.flipc .t{font-size:21px;line-height:1.25;letter-spacing:-.02em}
+.flipc .l{font-size:12px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.flipc .fa .l{color:#D9532A}
+
+/* watch */
+.watchwrap{display:grid;place-items:center;padding:20px 0}
+.watch{position:relative;width:230px}
+.watch .strap{position:absolute;left:50%;translate:-50% 0;width:150px;height:130px;background:#2A2A2A;border-radius:28px}
+.watch .strap.t{top:-100px} .watch .strap.b{bottom:-100px}
+.watch .body{position:relative;z-index:2;border-radius:58px;background:#1A1A1A;padding:12px;box-shadow:0 40px 60px rgba(0,0,0,.25),inset 0 0 0 2px #3a3a3a}
+.watch .face{border-radius:46px;background:#fff;height:270px;padding:26px 18px 18px;text-align:center;position:relative;overflow:hidden}
+.watch .time{font-size:46px;letter-spacing:-.04em;color:var(--blue);line-height:1}
+.watch .date{font-size:13px;margin-top:4px}
+.watch .note{position:absolute;left:10px;right:10px;bottom:10px;border-radius:26px;padding:12px 14px;text-align:left;background:linear-gradient(180deg,#FFF5DD,#FFD9A0);}
+.watch .note .tag{height:22px;font-size:10.5px}
+.watch .note b{display:block;font-weight:400;font-size:19px;letter-spacing:-.02em;margin-top:8px;line-height:1.15}
+.watch .note small{display:block;font-size:12px;color:var(--ink-2);margin-top:4px}
+.watch .crown{position:absolute;right:-9px;top:70px;width:12px;height:42px;border-radius:6px;background:#3a3a3a;z-index:1}
+.sf{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.sf div{border-radius:26px;padding:20px;color:#fff;min-height:170px;display:flex;flex-direction:column}
+.sf .L{font-size:90px;line-height:.85;letter-spacing:-.06em;font-weight:300}
+.sf p{margin:auto 0 0;font-size:14.5px;line-height:1.35}
+.sf .s1{background:var(--blue)} .sf .s2{background:var(--orange)}
+
+/* treemap */
+.tree{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:110px;gap:0;border-radius:var(--r);overflow:hidden;margin-top:30px}
+.tree button{position:relative;text-align:left;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden}
+.tree button .nn{font-size:clamp(30px,8vw,46px);letter-spacing:-.05em;line-height:1;font-weight:300}
+.tree button .tt{font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;line-height:1.25}
+.tree button .ex{font-size:13.5px;line-height:1.35;max-height:0;overflow:hidden;transition:max-height .45s var(--ease),margin .3s;text-transform:none;letter-spacing:0}
+.tree button.open .ex{max-height:120px;margin-top:8px}
+.tree .a{grid-column:span 6;grid-row:span 2;background:var(--blue)}
+.tree .b{grid-column:span 4;grid-row:span 2;background:var(--orange)}
+.tree .c{grid-column:span 2;grid-row:span 2;background:var(--yellow);color:var(--ink)}
+.tree .d{grid-column:span 2;grid-row:span 2;background:var(--navy)}
+.tree .e{grid-column:span 2;grid-row:span 2;background:#5E86F5}
+.tree .f{grid-column:span 2;grid-row:span 2;background:#B9CAFB;color:var(--navy)}
+@media(min-width:900px){ .tree{grid-template-columns:repeat(12,1fr);grid-auto-rows:120px} .tree .a{grid-column:span 6;grid-row:span 3} .tree .b{grid-column:span 6;grid-row:span 2} .tree .c{grid-column:span 3;grid-row:span 1} .tree .d{grid-column:span 3;grid-row:span 1} .tree .e,.tree .f{grid-column:span 3;grid-row:span 1} }
+
+/* email example */
+.mail .scr{height:680px;background:#fff}
+.mailhd{padding:6px 18px 10px;border-bottom:1px solid #F0EEE9}
+.mailhd .r{font-size:13px;color:var(--mute);display:flex;gap:6px;margin-top:4px}
+.mailhd .s{font-size:17px;margin-top:8px;letter-spacing:-.01em}
+.mailbody{flex:1;overflow:hidden;padding:14px 18px;font-size:14px;line-height:1.5}
+.mailbody p{margin:0 0 10px;padding:4px 8px;border-radius:10px;transition:background .3s}
+.mailbody p.lit{background:var(--lav)}
+.mailbody .ru{display:none;color:var(--ink-2)}
+.mail.ru .mailbody .en{display:none} .mail.ru .mailbody .ru{display:block}
+.mailbar{display:flex;gap:8px;padding:10px 14px 16px;border-top:1px solid #F0EEE9;align-items:center}
+.legend{display:grid;gap:8px;margin-top:22px}
+.legend button{display:flex;align-items:center;gap:12px;background:#fff;border-radius:18px;padding:12px 14px;text-align:left;font-size:15px;transition:background .2s}
+.legend button i{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-style:normal;font-size:13px;background:var(--cream);flex:none}
+.legend button.on{background:var(--lav)}
+.legend button.on i{background:var(--blue);color:#fff}
+
+/* video */
+.yt{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;background:#000;margin-top:28px}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.yt button{position:absolute;inset:0;display:grid;place-items:center}
+.yt button span{width:78px;height:78px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.yt button span .ic{font-size:30px;fill:#fff;margin-left:4px}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ytcap{display:flex;gap:12px;align-items:center;margin-top:14px;font-size:14px;color:var(--ink-2)}
+
+/* puzzle */
+.puz{background:#fff;border-radius:var(--r);padding:22px 18px;margin-top:28px}
+.puz .slots{display:grid;gap:6px;margin-bottom:18px}
+.puz .slot{height:40px;border-radius:12px;border:1.5px dashed var(--line);display:flex;align-items:center;gap:10px;padding:0 12px;font-size:14.5px;color:var(--mute)}
+.puz .slot i{font-style:normal;width:22px;height:22px;border-radius:50%;background:var(--cream);display:grid;place-items:center;font-size:11px;flex:none}
+.puz .slot.fill{border:0;background:var(--lav);color:var(--ink)}
+.puz .slot.fill i{background:var(--blue);color:#fff}
+.puz .pool{display:flex;flex-wrap:wrap;gap:8px}
+.puz .pool .opt{background:var(--cream);height:44px;font-size:14.5px}
+.puz .pool .opt.used{visibility:hidden}
+.puz .st{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:14px;color:var(--ink-2)}
+
+/* quiz */
+#qz{background:#fff;border-radius:var(--r);padding:24px 18px;margin-top:28px;position:relative;overflow:hidden;min-height:420px}
+.qbar{display:flex;gap:6px;margin-bottom:18px}
+.qbar i{flex:1;height:6px;border-radius:3px;background:var(--cream)}
+.qbar i.cur{background:var(--blue-2)} .qbar i.ok{background:var(--blue)} .qbar i.bad{background:var(--orange)}
+.qn{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0}
+.qq{font-size:clamp(21px,5.6vw,28px);line-height:1.25;letter-spacing:-.025em;margin:10px 0 20px}
+.qq u{text-decoration:none;color:var(--blue);border-bottom:2px solid var(--blue)}
+.qo{display:grid;gap:8px}
+.qo button{min-height:54px;padding:12px 18px;border-radius:20px;background:var(--cream);text-align:left;font-size:16px;transition:background .2s,color .2s}
+.qo button.ok{background:var(--blue);color:#fff} .qo button.bad{background:var(--orange);color:#fff}
+.qo button:disabled{cursor:default}
+.qx{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:15px;color:var(--ink-2);background:var(--lav);border-radius:18px;padding:14px}
+.qx .ic{font-size:20px;color:var(--blue);margin-top:1px}
+.qx.bad{background:#FFE7DC} .qx.bad .ic{color:var(--orange)}
+.qnext{margin-top:16px}
+.qres{text-align:center;padding:30px 0}
+.qres .score{font-size:110px;letter-spacing:-.06em;color:var(--blue);line-height:1;font-weight:300}
+.conf{position:absolute;left:50%;top:40%;width:9px;height:14px;border-radius:3px;pointer-events:none;z-index:5}
+
+/* cheat sheet */
+.cheat{display:grid;gap:10px;margin-top:30px}
+@media(min-width:700px){ .cheat{grid-template-columns:1fr 1fr} }
+@media(min-width:1000px){ .cheat{grid-template-columns:repeat(3,1fr)} }
+.cs{background:#fff;border-radius:26px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.cs .top{display:flex;align-items:center;gap:10px}
+.cs .top span{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:18px}
+.cs h4{margin:0;font-weight:500;font-size:16px}
+.cs ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14.5px;color:var(--ink-2)}
+.cs ul b{font-weight:500;color:var(--ink)}
+
+/* ad */
+.ad-hero{background:#141414;color:#fff;border-radius:40px;padding:34px 20px 0;overflow:hidden;position:relative}
+.ad-hero .arc{width:140%;aspect-ratio:1;left:-20%;bottom:-95%;opacity:.9}
+.ad-hero .h2{max-width:13ch}
+.ad-hero .lede{color:rgba(255,255,255,.72)}
+.logo-row{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+.logo-row svg{width:46px;height:46px}
+.logo-row b{font-weight:500;font-size:22px;letter-spacing:-.03em}
+.logo-row small{display:block;font-size:13px;color:rgba(255,255,255,.6)}
+.adphones{position:relative;display:flex;justify-content:center;gap:14px;margin-top:34px;z-index:2}
+.adphones .phone{width:250px;padding:9px;border-radius:44px}
+.adphones .phone .scr{height:520px;border-radius:36px}
+.adphones .phone video,.adphones .phone img{width:100%;height:100%;object-fit:cover;object-position:top}
+.adphones .phone.two{display:none}
+@media(min-width:760px){ .adphones .phone.two{display:block;margin-top:60px} }
+.cep{display:grid;gap:10px;margin-top:30px}
+@media(min-width:760px){ .cep{grid-template-columns:1fr 1fr} }
+.cep .evcard{max-width:none;box-shadow:none;background:#fff}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}
+@media(min-width:900px){ .facts{grid-template-columns:repeat(4,1fr)} }
+.fact{border-radius:26px;padding:20px 18px;min-height:170px;display:flex;flex-direction:column;justify-content:space-between}
+.fact .v{font-size:clamp(40px,11vw,64px);letter-spacing:-.06em;line-height:.95;font-weight:300}
+.fact .d{font-size:14px;line-height:1.35}
+.fact.f-b{background:var(--blue);color:#fff} .fact.f-o{background:var(--orange);color:#fff} .fact.f-y{background:var(--yellow)} .fact.f-n{background:var(--navy);color:#fff}
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gut) 18px;margin:30px calc(-1*var(--gut)) 0;scrollbar-width:none}
+.shots::-webkit-scrollbar{display:none}
+.shot{flex:none;width:min(84vw,560px);scroll-snap-align:center;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.08)}
+.shot .chrome{display:flex;align-items:center;gap:6px;height:34px;padding:0 14px;background:#F3F2EE}
+.shot .chrome i{width:10px;height:10px;border-radius:50%;background:#FF5F57} .shot .chrome i:nth-child(2){background:#FEBC2E} .shot .chrome i:nth-child(3){background:#28C840}
+.shot .chrome span{margin-left:10px;font-size:12px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.shot img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.shot p{margin:0;padding:12px 16px 16px;font-size:14px;color:var(--ink-2)}
+.steps3{display:grid;gap:10px;margin-top:30px}
+@media(min-width:900px){ .steps3{grid-template-columns:repeat(3,1fr)} }
+.st3{background:#fff;border-radius:26px;padding:20px;display:flex;gap:14px;align-items:center}
+.st3 b{width:46px;height:46px;border-radius:50%;background:var(--lav);color:var(--blue);display:grid;place-items:center;font-weight:500;flex:none}
+.buy{margin-top:30px;background:var(--blue);color:#fff;border-radius:40px;padding:34px 22px;position:relative;overflow:hidden}
+.buy .arc{width:120%;aspect-ratio:1;right:-60%;top:-40%;opacity:.55}
+.buy .h2{position:relative}
+.buy .cta-row{position:relative}
+.buy .btn.light{color:var(--blue)}
+.outro{background:var(--cream);border-radius:40px;padding:34px 22px;margin-top:10px}
+footer{padding:40px 0 140px;font-size:13px;color:var(--mute);text-align:center}
+
+/* voice picker */
+.vbtn{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 14px;border-radius:999px;background:var(--lav);color:var(--blue);font-size:14px;margin-left:10px;flex:none}
+.vbtn .ic{font-size:16px}
+@media(max-width:480px){ .topbar .who{display:none} .vbtn{margin-left:auto} }
+html.no-tts .vbtn,html.no-tts .vinline{display:none}
+.vinline{display:inline-flex;align-items:center;gap:8px;margin-top:18px;height:40px;padding:0 6px 0 14px;border-radius:999px;background:#fff;font-size:14px;color:var(--ink-2)}
+.vinline b{font-weight:500;color:var(--ink)}
+.vinline span.go{height:30px;padding:0 12px;border-radius:999px;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:13px}
+.vsheet{position:fixed;inset:0;z-index:80;visibility:hidden}
+.vsheet.open{visibility:visible}
+.vback{position:absolute;inset:0;background:rgba(20,20,20,.38);opacity:0;transition:opacity .35s}
+.vsheet.open .vback{opacity:1}
+.vpanel{position:absolute;left:0;right:0;bottom:0;max-height:88vh;display:flex;flex-direction:column;background:#fff;border-radius:32px 32px 0 0;padding:10px 18px calc(18px + env(safe-area-inset-bottom,0px));translate:0 105%;transition:translate .5s var(--ease);overflow:hidden}
+.vsheet.open .vpanel{translate:0 0}
+@media(min-width:700px){ .vpanel{left:50%;right:auto;width:520px;margin-left:-260px;bottom:20px;border-radius:32px} }
+.vpanel .grad{position:absolute;left:-30%;right:-30%;bottom:-70%;height:80%;border-radius:50%;filter:blur(30px);background:conic-gradient(from 180deg,#4A7FF8,#7E9EF8 15%,#FF7648 45%,#FFC757 70%,#FFE9BC 85%,#4A7FF8);opacity:.55;pointer-events:none}
+.vhandle{width:44px;height:5px;border-radius:3px;background:#DAD8D2;margin:0 auto 14px;flex:none}
+.vtop{display:flex;align-items:flex-start;gap:12px;position:relative}
+.vtop h3{margin:0;font-weight:400;font-size:28px;letter-spacing:-.035em;line-height:1.05}
+.vtop .x{margin-left:auto;width:40px;height:40px;border-radius:50%;background:var(--cream);display:grid;place-items:center;font-size:18px;flex:none}
+.vpanel .seg{margin:16px 0 12px;position:relative}
+.vlist{position:relative;overflow:auto;display:grid;gap:8px;padding:2px 2px 8px;min-height:120px;max-height:40vh;overscroll-behavior:contain}
+.vitem{display:flex;align-items:center;gap:12px;text-align:left;background:var(--cream);border-radius:20px;padding:12px 14px;font-size:15.5px;transition:background .2s,color .2s}
+.vitem .av{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:13px;font-weight:500;background:#fff;color:var(--blue);flex:none}
+.vitem .nm{flex:1;min-width:0}
+.vitem .nm small{display:block;font-size:12.5px;color:var(--mute)}
+.vitem .ck{width:26px;height:26px;border-radius:50%;border:1.5px solid #D2D0CA;display:grid;place-items:center;flex:none;color:transparent}
+.vitem.on{background:var(--lav)}
+.vitem.on .ck{background:var(--blue);border-color:var(--blue);color:#fff}
+.vitem .ck .ic{font-size:14px;stroke-width:3}
+.vempty{font-size:14.5px;color:var(--ink-2);background:var(--cream);border-radius:20px;padding:16px}
+.vrate{display:flex;align-items:center;gap:10px;margin-top:10px;position:relative;font-size:14px;color:var(--ink-2);flex-wrap:wrap}
+.vrate .seg{margin:0}
+.vrate .seg button{height:34px;padding:0 12px;font-size:13.5px}
+.vfoot{display:flex;gap:10px;margin-top:14px;position:relative}
+.vfoot .btn{flex:1;justify-content:center}
+
+/* reveal */
+.rv{will-change:transform}
+html:not(.gs) .rv{transition:translate .8s var(--ease)}
+html:not(.gs) .rv:not(.in){translate:0 24px}
+@media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} html{scroll-behavior:auto} }
+</style>
+
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<linearGradient id="sg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4A7FF8"/><stop offset=".55" stop-color="#FF7648"/><stop offset="1" stop-color="#FFC757"/></linearGradient>
+<symbol id="star" viewBox="0 0 64 64"><path d="M32 8c2.6 11.6 7.4 16.6 22 24-14.6 7.4-19.4 12.4-22 24-2.6-11.6-7.4-16.6-22-24 14.6-7.4 19.4-12.4 22-24z" fill="url(#sg)"/></symbol>
+</defs>
+<symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol>
+<symbol id="i-pen-line" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
+<symbol id="i-rotate-ccw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-inbox" viewBox="0 0 24 24"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></symbol>
+<symbol id="i-chart-column" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+<symbol id="i-paperclip" viewBox="0 0 24 24"><path d="M13.234 20.252 21 12.3"/><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-gamepad-2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+<symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+<symbol id="i-droplets" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+<symbol id="i-eraser" viewBox="0 0 24 24"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></symbol>
+
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg><use href="#star"/></svg>Dias English</a>
+    <span class="who">гайд от Диаса · Рим</span>
+    <button class="vbtn" type="button" data-vopen aria-haspopup="dialog"><svg class="ic"><use href="#i-volume-2"/></svg>Голос</button>
+  </div>
+  <i class="prog" id="prog"></i>
+</header>
+
+<nav class="tabbar" id="tabbar" aria-label="Разделы">
+  <a href="#top" data-sec="hero"><svg class="ic"><use href="#i-house"/></svg>Старт</a>
+  <a href="#anatomy" data-sec="anatomy"><svg class="ic"><use href="#i-mail"/></svg>Письмо</a>
+  <a href="#practice" data-sec="practice"><svg class="ic"><use href="#i-pen-line"/></svg>Практика</a>
+  
+  <a href="#cheat" data-sec="cheat"><svg class="ic"><use href="#i-list-checks"/></svg>Шпаргалка</a>
+</nav>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <p class="eyebrow"><svg class="ic"><use href="#i-mail"/></svg>Гайд · деловое письмо на английском</p>
+      <h1 class="h1 split-h">Письмо, на которое <span class="hi">наконец ответят</span></h1>
+      <p class="lede">Учусь в Риме. Здесь всё решают письма: университет, стажировка, документы. Разбираем деловое письмо за 8 минут.</p>
+      <div class="meta">
+        <span class="tag t-lav">8 минут</span><span class="tag t-peach">9 частей письма</span><span class="tag t-sand">3 упражнения</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="#route">Начать <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <button class="mic" type="button" data-say="Dear Ms Walker, I am writing regarding the internship. I look forward to hearing from you. Kind regards, Dias." aria-label="Послушать пример письма"><svg class="ic"><use href="#i-mic"/></svg></button>
+      </div>
+    </div>
+    <div class="stage" id="stage">
+      <div class="arc"></div>
+      <div class="letter" aria-hidden="true">
+        <div class="lh"><span class="tag t-lav">New mail</span><span>to: l.bianchi@novamedia.co.uk</span></div>
+        <div class="ls">Application: Summer Internship</div>
+        <p>Dear Ms Bianchi,</p>
+        <p>I am writing to apply for the summer internship…</p>
+        <i class="sk" style="width:92%"></i><i class="sk" style="width:76%"></i><i class="sk" style="width:84%"></i>
+        <p style="margin-top:8px">Yours sincerely,<br>Dias</p>
+        <div class="lf"><span class="small">Сегодня, 18:30</span><span class="mic"><svg class="ic"><use href="#i-send"/></svg></span></div>
+      </div>
+      <div class="floaters" id="floaters">
+        <span class="chip c-blue f1">Dear Ms Walker<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
+        <span class="chip c-yellow f2">Best regards<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
+        <span class="chip c-pink f3">Please find attached<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
+        <span class="chip c-orange f4">I look forward to…<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
+        <span class="tag t-violet f5">Study</span>
+        <span class="tag t-maroon f6">Visa</span>
+        <span class="tag t-red f7">Job</span>
+      </div>
+      <button class="btn light restore" id="restore" type="button"><svg class="ic"><use href="#i-rotate-ccw"/></svg> Вернуть фразы</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROUTE (scope of work) ============ -->
+<section class="sec" id="route">
+  <div class="wrap">
+    <p class="eyebrow">Маршрут</p>
+    <h2 class="h2 split-h">Что разберём <span class="hi">за 8 минут</span></h2>
+    <div class="gantt rv" style="margin-top:34px">
+      <h3>Scope of work</h3>
+      <div class="gscale"><span>0</span><span>2</span><span>4</span><span>6</span><span>8 мин</span></div>
+      <div class="grows" id="grows">
+        <div class="grow" style="padding-left:0;width:42%"><a class="gbar" href="#insights"><span>Три инсайта</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:10%"><a class="gbar" href="#anatomy"><span>Скелет</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:20%"><a class="gbar" href="#date"><span>Дата</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:28%"><a class="gbar" href="#salute"><span>Обращение</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:36%"><a class="gbar" href="#open"><span>Первая фраза</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:44%"><a class="gbar" href="#body"><span>Без воды</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:52%"><a class="gbar" href="#close"><span>Финал</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:58%"><a class="gbar" href="#practice"><span>Практика</span><span class="dur">2 мин</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSIGHTS ============ -->
+<section class="sec dark" id="insights">
+  <div class="wrap">
+    <p class="eyebrow">Инсайты</p>
+    <h2 class="h2 split-h">Три вещи, после которых <span style="color:#9DB8FF">письма пишутся сами</span></h2>
+    <div class="ins-row">
+      <div class="insight rv">
+        <span class="k">Insight 1</span>
+        <h3>У любого письма есть <span class="hi">скелет</span></h3>
+        <svg class="ring" viewBox="0 0 150 150" id="ring"></svg>
+        <span class="cap">частей в каждом деловом письме</span>
+        <span class="num count" data-to="9" style="font-size:64px;margin-top:6px">9</span>
+      </div>
+      <div class="insight warm rv">
+        <span class="k">Insight 2</span>
+        <h3>Британец и американец пишут <span class="hi-y">одно и то же по-разному</span></h3>
+        <span class="num count" data-to="2">2</span>
+        <span class="cap">формата: UK и US</span>
+      </div>
+      <div class="insight rv">
+        <span class="k">Insight 3</span>
+        <h3>Вежливость живёт в <span class="hi">трёх словах</span></h3>
+        <span class="num count" data-to="3">3</span>
+        <span class="cap">could · would · might</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANATOMY ============ -->
+<section class="sec cream" id="anatomy">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Скелет письма</p>
+      <h2 class="h2 split-h">Девять частей. <span class="hi">Каждая на своём месте.</span></h2>
+      <p class="lede">Нажми на любую часть письма. Переключи UK и US. Смотри, что поедет.</p>
+      <div class="ukus"><div class="seg" id="mode"><button type="button" class="on" data-m="uk">UK</button><button type="button" data-m="us">US</button></div><span class="small" id="modeNote">Британский формат</span></div>
+      <div class="info" id="info" aria-live="polite"><span class="big" id="infoN">1</span><div><h4 id="infoT">Адрес отправителя</h4><p id="infoP"></p></div></div>
+    </div>
+    <div class="letterwrap rv">
+      <div class="paper" id="paper">
+        <button type="button" class="lb right" data-i="0"><span class="n">1</span><span class="ln">Via Roma 12</span><span class="ln">00185 Rome</span><span class="ln">Italy</span></button>
+        <button type="button" class="lb right" data-i="1"><span class="n">2</span><span class="ln" id="lDate">20 November 2026</span></button>
+        <button type="button" class="lb" data-i="2"><span class="n">3</span><span class="ln">Ms Laura Bianchi</span><span class="ln">Head of Recruitment</span><span class="ln">Nova Media Ltd</span><span class="ln" id="lCity">London SW6 3BU, UK</span></button>
+        <button type="button" class="lb" data-i="3"><span class="n">4</span><span class="ln" id="lDear">Dear Ms Bianchi,</span></button>
+        <button type="button" class="lb" data-i="4"><span class="n">5</span><span class="ln">I am writing to apply for the summer internship posted on your website.</span></button>
+        <button type="button" class="lb" data-i="5"><span class="n">6</span><span class="ln">I study at Sapienza University of Rome and speak English, Italian and Russian. I also play in a football league, so I know how teams work.</span></button>
+        <button type="button" class="lb" data-i="6"><span class="n">7</span><span class="ln">Please find attached my CV. I look forward to hearing from you.</span></button>
+        <button type="button" class="lb" data-i="7"><span class="n">8</span><span class="ln">Yours sincerely,</span></button>
+        <button type="button" class="lb" data-i="8"><span class="n">9</span><span class="ln">Dias</span><span class="ln small">Student, Sapienza University of Rome</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DATE ============ -->
+<section class="sec navy" id="date">
+  <div class="wrap split rev">
+    <div>
+      <p class="eyebrow">Дата</p>
+      <h2 class="h2 split-h">Одна дата. <span style="color:var(--yellow)">Два мира.</span></h2>
+      <p class="lede">Британец пишет число, потом месяц. Американец наоборот. Тыкни в любой день календаря.</p>
+      <div class="trap">
+        <div class="trapcard rv">
+          <span class="small" style="color:rgba(255,255,255,.6)">Ловушка</span>
+          <div class="big">03/04/2027</div>
+          <div class="two"><div>Лондон читает<b>3 апреля</b></div><div>Нью-Йорк читает<b>4 марта</b></div></div>
+        </div>
+        <p style="margin:0;color:rgba(255,255,255,.8)">Месяц пиши словами. Тогда не перепутает никто. Даже стажёр.</p>
+      </div>
+    </div>
+    <div class="phone cal rv">
+      <i class="island"></i>
+      <div class="scr">
+        <div class="sbar"><span>9:41</span><i><b></b></i></div>
+        <div class="calhead"><span class="ib"><svg class="ic"><use href="#i-search"/></svg></span><div class="seg"><button type="button">Day</button><button type="button">Week</button><button type="button" class="on">Month</button></div><span class="ib"><svg class="ic"><use href="#i-settings"/></svg></span></div>
+        <div class="mon"><b>November</b><span><svg class="ic"><use href="#i-chevron-left"/></svg><svg class="ic"><use href="#i-chevron-right"/></svg></span></div>
+        <div class="wk"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+        <div class="days" id="days"></div>
+        <div class="datebox">
+          <div class="row"><span class="tag t-blue">UK</span><b id="dUK">20 November 2026</b></div>
+          <div class="row"><span class="tag">US</span><b id="dUS">November 20, 2026</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SALUTATION ============ -->
+<section class="sec" id="salute">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Обращение</p>
+      <h2 class="h2 split-h">Скажи, кому пишешь. <span class="hi">Обращение найдётся само.</span></h2>
+      <p class="lede">Главный вопрос: что ты знаешь о человеке. Имя, пол, должность или вообще ничего.</p>
+      <p class="small" style="margin-top:18px">Точка и знак после обращения зависят от режима UK / US в блоке «Скелет».</p>
+    </div>
+    <div class="phone sal rv">
+      <i class="island"></i>
+      <div class="scr">
+        <div class="sbar"><span>9:41</span><i><b></b></i></div>
+        <div class="salchat" id="salchat">
+          <p class="bot">Отлично. Пишем письмо.<br>Скажи, <span class="hl">что ты знаешь о получателе?</span></p>
+          <div class="salopts" id="salopts"></div>
+        </div>
+        <div class="ask"><span>Ask Dias anything</span><button class="mic" type="button" id="salMic" aria-label="Послушать"><svg class="ic"><use href="#i-mic"/></svg></button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPENING ============ -->
+<section class="sec cream" id="open">
+  <div class="wrap">
+    <p class="eyebrow">Первая фраза</p>
+    <h2 class="h2 split-h">Забудь <span class="hi-o">«I hope this email finds you well»</span></h2>
+    <p class="lede">Это вода. Первая строка сразу говорит, зачем ты пишешь. Выбери ситуацию.</p>
+    <button class="vinline" type="button" data-vopen><svg class="ic"><use href="#i-volume-2"/></svg>Голос: <b class="vcur">по умолчанию</b><span class="go">Сменить</span></button>
+    <div class="tabs" id="otabs"></div>
+    <div class="phrases" id="ophr"></div>
+  </div>
+</section>
+
+<!-- ============ BODY ============ -->
+<section class="sec" id="body">
+  <div class="wrap">
+    <p class="eyebrow">Основная часть</p>
+    <h2 class="h2 split-h">Суть <span class="hi">без лирики.</span></h2>
+    <p class="lede">Один абзац. Одна мысль. Если хватает одного абзаца, второй «для солидности» не пиши.</p>
+    <div class="split" style="margin-top:34px;align-items:start">
+      <div class="water rv" id="water">
+        <span class="k"><svg class="ic"><use href="#i-droplets"/></svg>Детектор воды · <span id="wNum">1/3</span></span>
+        <p class="wtext" id="wtext"></p>
+        <div class="wmeter"><span>Вода</span><span class="bar"><i id="wbar"></i></span><span id="wpct">100%</span></div>
+        <div class="wnav"><button class="btn" type="button" id="wGo"><svg class="ic"><use href="#i-eraser"/></svg>Убрать воду</button><button class="btn light" type="button" id="wNext">Следующее <svg class="ic"><use href="#i-arrow-right"/></svg></button></div>
+      </div>
+      <div>
+        <h3 style="font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0">Can и will звучат как приказ. <span class="hi">Could и would как просьба.</span></h3>
+        <p class="small" style="margin:8px 0 0">Тапни карточку, чтобы перевернуть.</p>
+        <div class="rw" id="rw"></div>
+      </div>
+    </div>
+    <div style="margin-top:40px">
+      <h3 style="font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0 0 14px">Плохая новость в бархатной перчатке</h3>
+      <div class="phrases" id="badnews"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="sec cream" id="close">
+  <div class="wrap split rev">
+    <div>
+      <p class="eyebrow">Финал и подпись</p>
+      <h2 class="h2 split-h">Закончи так, чтобы <span class="hi">захотелось ответить.</span></h2>
+      <p class="lede">Последний абзац просит действие. Потом прощание. Выбери, насколько вы знакомы.</p>
+      <div class="pillrow" id="closeOpts" style="margin-top:22px"></div>
+      <div class="sf">
+        <div class="s1 rv"><span class="L">S</span><p><b>Sincerely</b> = знаешь <b>Surname</b>. Фамилия есть, значит sincerely.</p></div>
+        <div class="s2 rv"><span class="L">F</span><p><b>Faithfully</b> = <b>Faceless</b>. Лица не знаешь, значит faithfully.</p></div>
+      </div>
+    </div>
+    <div class="watchwrap rv">
+      <div class="watch">
+        <i class="strap t"></i><i class="strap b"></i><i class="crown"></i>
+        <div class="body"><div class="face">
+          <div class="time" id="wTime">17:30</div><div class="date">20th Nov 2026</div>
+          <div class="note"><span class="tag t-lav" id="wTag">Sign-off</span><b id="wSign">Yours sincerely,</b><small id="wWhy">Знаешь фамилию</small></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:50px">
+    <h3 style="font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0 0 14px">Фразы для последнего абзаца</h3>
+    <div class="phrases" id="finals"></div>
+  </div>
+</section>
+
+<!-- ============ TIPS treemap ============ -->
+<section class="sec" id="tips">
+  <div class="wrap">
+    <p class="eyebrow">Правила тона</p>
+    <h2 class="h2 split-h">Шесть правил, <span class="hi">которые видно сразу</span></h2>
+    <p class="lede">Тапни на блок. Самое важное занимает больше места.</p>
+    <div class="tree" id="tree">
+      <button type="button" class="a"><span class="nn">01</span><span class="tt">Без сокращений</span><span class="ex">I'm, can't, it's оставь для чата. В письме I am, cannot, it is.</span></button>
+      <button type="button" class="b"><span class="nn">02</span><span class="tt">Активный залог</span><span class="ex">Не «The meeting could be held on Thursday». А «We could meet on Thursday».</span></button>
+      <button type="button" class="c"><span class="nn">03</span><span class="tt">Could · would · might</span><span class="ex">Просишь? Только через них.</span></button>
+      <button type="button" class="d"><span class="nn">04</span><span class="tt">Проверь имена</span><span class="ex">Ошибка в фамилии хуже ошибки в грамматике.</span></button>
+      <button type="button" class="e"><span class="nn">05</span><span class="tt">Без смайлов и сленга</span><span class="ex">Никаких 🙂, lol и btw.</span></button>
+      <button type="button" class="f"><span class="nn">06</span><span class="tt">I и we</span><span class="ex">I про себя. We, когда понятно, кто это «мы».</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAMPLE ============ -->
+<section class="sec cream" id="example">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Письмо целиком</p>
+      <h2 class="h2 split-h">Собрали. <span class="hi">Отправляем.</span></h2>
+      <p class="lede">Отклик на стажировку. Каждая часть подсвечивается. Переключи на русский, если надо.</p>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="phone mail rv" id="mail">
+      <i class="island"></i>
+      <div class="scr">
+        <div class="sbar"><span>9:41</span><i><b></b></i></div>
+        <div class="mailhd"><span class="tag t-lav">Inbox · Sent</span><div class="r"><span>To:</span><span>l.bianchi@novamedia.co.uk</span></div><div class="s">Application: Summer Internship</div></div>
+        <div class="mailbody" id="mailbody">
+          <p data-b="0"><span class="en">Dear Ms Bianchi,</span><span class="ru">Уважаемая госпожа Бьянки,</span></p>
+          <p data-b="1"><span class="en">I am writing to apply for the summer internship posted on your website.</span><span class="ru">Пишу, чтобы откликнуться на летнюю стажировку с вашего сайта.</span></p>
+          <p data-b="2"><span class="en">I study at Sapienza University of Rome. I speak English, Italian and Russian, and I play in a football league, so I know how to work in a team.</span><span class="ru">Я учусь в Римском университете Сапиенца. Говорю на английском, итальянском и русском, играю в футбольной лиге, так что умею работать в команде.</span></p>
+          <p data-b="3"><span class="en">Please find attached my CV. I would be grateful if you could let me know about the next steps.</span><span class="ru">Прикладываю резюме. Буду благодарен, если сообщите о следующих шагах.</span></p>
+          <p data-b="4"><span class="en">I look forward to hearing from you.</span><span class="ru">Жду вашего ответа.</span></p>
+          <p data-b="5"><span class="en">Yours sincerely,<br>Dias</span><span class="ru">С уважением,<br>Диас</span></p>
+        </div>
+        <div class="mailbar"><div class="seg" id="lang"><button type="button" class="on" data-l="en">EN</button><button type="button" data-l="ru">RU</button></div><button class="say" type="button" id="mailSay" aria-label="Послушать письмо" style="margin-left:auto"><svg class="ic"><use href="#i-volume-2"/></svg></button><span class="mic" style="width:44px;height:44px"><svg class="ic"><use href="#i-send"/></svg></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="sec" id="video">
+  <div class="wrap">
+    <p class="eyebrow">Видео</p>
+    <h2 class="h2 split-h">Хочешь послушать? <span class="hi">Десять минут на YouTube.</span></h2>
+    <div class="yt rv" id="yt" data-id="dfBDjB1cM-Q">
+      <img src="https://i.ytimg.com/vi/dfBDjB1cM-Q/hqdefault.jpg" alt="Превью видео про деловое письмо" loading="lazy">
+      <button type="button" aria-label="Смотреть видео"><span><svg class="ic"><use href="#i-play"/></svg></span></button>
+    </div>
+    <div class="ytcap"><span class="tag t-red">YouTube</span><span>EP Advisory · «Как писать деловое письмо Email на английском + готовые фразы» · 9:40</span></div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE ============ -->
+<section class="sec cream" id="practice">
+  <div class="wrap">
+    <p class="eyebrow">Практика</p>
+    <h2 class="h2 split-h">Теперь ты. <span class="hi">Два упражнения.</span></h2>
+    <p class="lede">Первое: собери скелет по порядку. Второе: шесть вопросов с объяснениями.</p>
+    <div class="puz rv" id="puz">
+      <div class="st"><span><b>Собери письмо.</b> Тапай части по порядку сверху вниз.</span><span id="pScore">0/9</span></div>
+      <div class="slots" id="slots"></div>
+      <div class="pool" id="pool"></div>
+    </div>
+    <div id="qz"></div>
+  </div>
+</section>
+
+<!-- ============ CHEAT ============ -->
+<section class="sec" id="cheat">
+  <div class="wrap">
+    <p class="eyebrow">Шпаргалка</p>
+    <h2 class="h2 split-h">Сохрани <span class="hi">скриншотом</span></h2>
+    <div class="cheat">
+      <div class="cs rv"><div class="top"><span style="background:var(--blue)"><svg class="ic"><use href="#i-list-checks"/></svg></span><h4>Скелет</h4></div><ul><li>Адрес → дата → адрес получателя</li><li>Обращение → вступление → суть</li><li>Заключение → прощание → подпись</li></ul></div>
+      <div class="cs rv"><div class="top"><span style="background:var(--orange)"><svg class="ic"><use href="#i-globe"/></svg></span><h4>UK против US</h4></div><ul><li><b>UK:</b> 20 November 2026, Dear Mr Smith,</li><li><b>US:</b> November 20, 2026, Dear Mr. Smith:</li><li>Месяц всегда словами</li></ul></div>
+      <div class="cs rv"><div class="top"><span style="background:var(--violet)"><svg class="ic"><use href="#i-users"/></svg></span><h4>Обращение</h4></div><ul><li>Никого не знаешь → <b>To whom it may concern</b></li><li>Знаешь должность → <b>Dear Hiring Manager</b></li><li>Знаешь фамилию → <b>Dear Ms Walker</b></li></ul></div>
+      <div class="cs rv"><div class="top"><span style="background:var(--navy)"><svg class="ic"><use href="#i-pen-line"/></svg></span><h4>Первая фраза</h4></div><ul><li><b>I am writing to</b> apply / ask / confirm</li><li><b>Further to</b> your last email</li><li><b>Thank you for</b> your letter</li></ul></div>
+      <div class="cs rv"><div class="top"><span style="background:#E9A21C"><svg class="ic"><use href="#i-hand"/></svg></span><h4>Просьба</h4></div><ul><li><b>Could you</b> send me…?</li><li><b>I would be grateful if</b> you could…</li><li>Не can и не will</li></ul></div>
+      <div class="cs rv"><div class="top"><span style="background:var(--red)"><svg class="ic"><use href="#i-send"/></svg></span><h4>Финал</h4></div><ul><li><b>Please find attached</b> my CV</li><li><b>I look forward to</b> hearing from you</li><li><b>S</b>incerely = Surname · <b>F</b>aithfully = Faceless</li></ul></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="outro rv">
+      <p class="eyebrow">Финиш</p>
+      <h2 class="h2">Одно письмо <span class="hi">сегодня.</span></h2>
+      <p class="lede">Напиши его хоть себе. Структура запоминается руками, а не глазами.</p>
+      <div class="cta-row"><a class="btn" href="#practice"><svg class="ic"><use href="#i-rotate-ccw"/></svg>Пройти тест ещё раз</a></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="vsheet" id="vsheet" role="dialog" aria-modal="true" aria-labelledby="vTitle">
+  <div class="vback" data-vclose></div>
+  <div class="vpanel">
+    <div class="grad"></div>
+    <i class="vhandle"></i>
+    <div class="vtop"><div><p class="eyebrow" style="margin-bottom:6px">Озвучка</p><h3 id="vTitle">Выбери голос</h3></div><button class="x" type="button" data-vclose aria-label="Закрыть"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="seg" id="vacc"><button type="button" data-a="GB" class="on">UK</button><button type="button" data-a="US">US</button><button type="button" data-a="all">Все</button></div>
+    <div class="vlist" id="vlist"></div>
+    <div class="vrate"><span>Скорость</span><div class="seg" id="vrate"><button type="button" data-r=".75">0.75×</button><button type="button" data-r=".92" class="on">0.9×</button><button type="button" data-r="1">1×</button><button type="button" data-r="1.15">1.15×</button></div></div>
+    <div class="vfoot"><button class="btn light" type="button" id="vTest"><svg class="ic"><use href="#i-play"/></svg>Послушать</button><button class="btn" type="button" data-vclose><svg class="ic"><use href="#i-check"/></svg>Готово</button></div>
+  </div>
+</div>
+
+<footer>Dias English · гайд от Диаса, Рим · 2026</footer>
+</main>
+
+<script>
+function xInit(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var G = window.gsap && window.ScrollTrigger ? window.gsap : null;
+  if(G){ try{ G.registerPlugin(ScrollTrigger); window.SplitText && G.registerPlugin(SplitText); }catch(e){ G = null; } }
+  if(G && reduce) G = null;
+  if(G){ document.documentElement.classList.add('gs'); ScrollTrigger.config({ignoreMobileResize:true}); }
+  var ST = G && window.SplitText;
+  function $(s,r){ return (r||document).querySelector(s); }
+  function $$(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+  function whenVisible(el, on, off, th){
+    if(!el) return;
+    if(!('IntersectionObserver' in window)){ on(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(en){ en.isIntersecting ? on() : (off && off()); }); }, {threshold:th||.25}).observe(el);
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  /* ---------- speech (English) + voice picker ---------- */
+  var tts = 'speechSynthesis' in window, VO = [], vSel = null, vRate = .92, vAcc = 'GB';
+  if(!tts) document.documentElement.classList.add('no-tts');
+  function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function lsSet(k, v){ try{ localStorage.setItem(k, v); }catch(e){} }
+  var savedURI = lsGet('dias-voice'), savedRate = parseFloat(lsGet('dias-rate'));
+  if(savedRate > .5 && savedRate < 1.6) vRate = savedRate;
+  function acc(v){ var m = /^en[-_](\w\w)/i.exec(v.lang); return m ? m[1].toUpperCase() : 'EN'; }
+  var ACCN = {GB:'британский', US:'американский', AU:'австралийский', IE:'ирландский', IN:'индийский', ZA:'южноафриканский', CA:'канадский', NZ:'новозеландский', SC:'шотландский', EN:'английский'};
+  function loadVoices(){
+    try{
+      VO = speechSynthesis.getVoices().filter(function(v){ return /^en/i.test(v.lang) && !JOKE.test(v.name); });
+      VO.sort(function(a, b){ var o = {GB:0, US:1}; var x = (acc(a) in o ? o[acc(a)] : 2) - (acc(b) in o ? o[acc(b)] : 2); var GOOD = /Samantha|Daniel|Serena|Kate|Oliver|Arthur|Martha|Stephanie|Karen|Moira|Ava|Allison|Susan|Tom|Evan|Nathan|Zoe|Siri|Google|Natural|Neural|Sonia|Ryan|Libby|Aria|Jenny|Guy/i;
+        return x || (GOOD.test(b.name) - GOOD.test(a.name)) || (b.localService - a.localService) || a.name.localeCompare(b.name); });
+      vSel = VO.find(function(v){ return v.voiceURI === savedURI; }) || vSel && VO.find(function(v){ return v.voiceURI === vSel.voiceURI; }) || VO.find(function(v){ return acc(v) === 'GB'; }) || VO[0] || null;
+      if(vSel && !savedURI) vAcc = acc(vSel) === 'US' ? 'US' : acc(vSel) === 'GB' ? 'GB' : 'all';
+      if(vSel && savedURI) vAcc = acc(vSel) === 'GB' || acc(vSel) === 'US' ? acc(vSel) : 'all';
+      curLabel(); if(sheet && sheet.classList.contains('open')) drawVoices();
+    }catch(e){}
+  }
+  var JOKE = /^(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Good News|Jester|Organ|Superstar|Trinoids|Whisper|Wobble|Zarvox|Deranged|Hysterical|Pipe Organ)\b/i;
+  function tag(v){ var a = acc(v); return a === 'GB' ? 'UK' : a; }
+  function vName(v){ return v.name.replace(/^(Microsoft|Google)\s+/,'').replace(/\s*\(.*\)\s*/g,' ').replace(/\s+Online.*$/,'').replace(/\s*-\s*English.*$/,'').trim() || v.name; }
+  function curLabel(){ $$('.vcur').forEach(function(el){ el.textContent = vSel ? vName(vSel) + ' · ' + tag(vSel) : 'по умолчанию'; }); }
+  if(tts){ loadVoices(); try{ speechSynthesis.addEventListener ? speechSynthesis.addEventListener('voiceschanged', loadVoices) : (speechSynthesis.onvoiceschanged = loadVoices); }catch(e){} }
+  function say(text, btn){
+    if(!tts || !text) return;
+    try{
+      speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = vSel ? vSel.lang : 'en-GB'; u.rate = vRate; if(vSel) u.voice = vSel;
+      if(btn){ btn.classList.add('on'); u.onend = u.onerror = function(){ btn.classList.remove('on'); }; }
+      speechSynthesis.speak(u);
+    }catch(e){}
+  }
+  var sheet = $('#vsheet'), vlist = $('#vlist'), lastFocus = null;
+  function drawVoices(){
+    $$('#vacc button').forEach(function(b){ b.classList.toggle('on', b.dataset.a === vAcc); });
+    var list = VO.filter(function(v){ return vAcc === 'all' || acc(v) === vAcc; });
+    if(!list.length){ vlist.innerHTML = '<p class="vempty">' + (VO.length ? 'Таких голосов в этом браузере нет. Открой вкладку «Все».' : 'Браузер пока не дал список голосов. Будет голос по умолчанию. На телефоне голоса добавляются в настройках системы.') + '</p>'; return; }
+    vlist.innerHTML = list.map(function(v){
+      var i = VO.indexOf(v), a = acc(v);
+      return '<button type="button" class="vitem' + (v === vSel ? ' on' : '') + '" data-v="' + i + '" aria-pressed="' + (v === vSel) + '"><span class="av">' + tag(v) + '</span><span class="nm">' + esc(vName(v)) + '<small>' + (ACCN[a] || a) + (v.localService ? ' · на устройстве' : ' · онлайн') + '</small></span><span class="ck"><svg class="ic"><use href="#i-check"/></svg></span></button>';
+    }).join('');
+    $$('.vitem', vlist).forEach(function(b){ b.addEventListener('click', function(){
+      vSel = VO[+b.dataset.v]; lsSet('dias-voice', vSel.voiceURI); curLabel();
+      $$('.vitem', vlist).forEach(function(x){ x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+      say('Dear Ms Walker, I look forward to hearing from you.');
+    }); });
+    if(G) G.from($$('.vitem', vlist), {y:16, duration:.4, ease:'back.out(2)', stagger:.03});
+  }
+  function openSheet(){ lastFocus = document.activeElement; loadVoices(); drawVoices(); $$('#vrate button').forEach(function(b){ b.classList.toggle('on', Math.abs(+b.dataset.r - vRate) < .01); }); sheet.classList.add('open'); document.documentElement.style.overflow = 'hidden'; setTimeout(function(){ var f = $('.vitem.on', vlist) || $('.x', sheet); f && f.focus({preventScroll:true}); }, 60); }
+  function closeSheet(){ sheet.classList.remove('open'); document.documentElement.style.overflow = ''; lastFocus && lastFocus.focus && lastFocus.focus({preventScroll:true}); }
+  document.addEventListener('click', function(e){ if(e.target.closest('[data-vopen]')) openSheet(); else if(e.target.closest('[data-vclose]')) closeSheet(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && sheet.classList.contains('open')) closeSheet(); });
+  $$('#vacc button').forEach(function(b){ b.addEventListener('click', function(){ vAcc = b.dataset.a; drawVoices(); }); });
+  $$('#vrate button').forEach(function(b){ b.addEventListener('click', function(){ vRate = +b.dataset.r; lsSet('dias-rate', vRate); $$('#vrate button').forEach(function(x){ x.classList.toggle('on', x === b); }); }); });
+  $('#vTest').addEventListener('click', function(){ say('Dear Ms Walker, I am writing regarding the summer internship. Kind regards, Dias.', this); });
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('[data-say]');
+    if(b) say(b.dataset.say, b);
+  });
+
+  /* ---------- progress bar + tab bar ---------- */
+  var prog = $('#prog');
+  function onScroll(){
+    var h = document.documentElement, max = h.scrollHeight - innerHeight;
+    prog.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, scrollY / max) : 0) + ')';
+  }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  var tabs = $$('#tabbar a'), secs = tabs.map(function(a){ return document.getElementById(a.dataset.sec); });
+  function activeTab(){
+    var y = scrollY + innerHeight * .45, k = 0;
+    secs.forEach(function(sec, i){ if(sec && sec.getBoundingClientRect().top + scrollY <= y) k = i; });
+    tabs.forEach(function(t, i){ t.classList.toggle('on', i === k); });
+  }
+  addEventListener('scroll', activeTab, {passive:true}); activeTab();
+
+  /* ---------- reveals ---------- */
+  if(G){
+    $$('.split-h').forEach(function(h){
+      if(!ST) return;
+      var sp = new SplitText(h, {type:'words', wordsClass:'wd'});
+      G.from(sp.words, {yPercent:60, rotation:4, duration:.9, ease:'back.out(1.8)', stagger:.045, scrollTrigger:{trigger:h, start:'top 88%', once:true}});
+    });
+    ScrollTrigger.batch('.rv', {start:'top 90%', once:true, onEnter:function(b){ G.from(b, {y:50, rotation:1.2, duration:1, ease:'power3.out', stagger:.08}); }});
+  } else if('IntersectionObserver' in window){
+    var rio = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); rio.unobserve(en.target); } }); }, {threshold:.1});
+    $$('.rv').forEach(function(el){ rio.observe(el); });
+  } else $$('.rv').forEach(function(el){ el.classList.add('in'); });
+
+  /* ---------- counters ---------- */
+  $$('.count').forEach(function(el){
+    var to = +el.dataset.to;
+    if(!G) return;
+    var o = {v:0};
+    G.to(o, {v:to, duration:1.4, ease:'power2.out', scrollTrigger:{trigger:el, start:'top 92%', once:true}, onUpdate:function(){ el.textContent = Math.round(o.v); }});
+  });
+
+  /* ---------- hero chips ---------- */
+  var fl = $('#floaters'), restore = $('#restore');
+  var floaters = $$('#floaters > *');
+  if(G){
+    floaters.forEach(function(el, i){ G.to(el, {y:i % 2 ? -10 : 10, rotation:i % 2 ? -1.5 : 1.5, duration:2.4 + i * .3, ease:'sine.inOut', yoyo:true, repeat:-1}); });
+    G.from('.stage .letter', {y:80, rotation:-4, duration:1.2, ease:'back.out(1.6)'});
+    G.from(floaters, {scale:.4, rotation:-10, duration:.9, ease:'back.out(2.4)', stagger:.08, delay:.3});
+  }
+  function chipsLeft(){ return $$('.chip', fl).filter(function(c){ return !c.dataset.gone; }).length; }
+  $$('.chip .cx', fl).forEach(function(b){
+    b.addEventListener('click', function(){
+      var c = b.parentNode; c.dataset.gone = 1;
+      if(G){ G.killTweensOf(c); G.to(c, {y:'+=420', rotation:G.utils.random(-50,50), duration:1.1, ease:'power2.in', onComplete:function(){ c.style.visibility = 'hidden'; }}); }
+      else c.style.visibility = 'hidden';
+      if(!chipsLeft()) setTimeout(function(){ restore.classList.add('show'); }, 700);
+    });
+  });
+  restore.addEventListener('click', function(){
+    restore.classList.remove('show');
+    $$('.chip', fl).forEach(function(c){
+      delete c.dataset.gone; c.style.visibility = '';
+      if(G){ G.killTweensOf(c); G.fromTo(c, {y:-60, scale:.5, rotation:0}, {y:0, scale:1, duration:.9, ease:'elastic.out(1,.5)'}); }
+    });
+  });
+
+  /* ---------- gantt ---------- */
+  if(G) $$('.gantt').forEach(function(g){
+    G.from($$('.gbar', g), {scaleX:.3, duration:.9, ease:'power3.out', stagger:.08, scrollTrigger:{trigger:g, start:'top 80%', once:true}});
+  });
+
+  /* ---------- ring (insight 1) ---------- */
+  var ring = $('#ring');
+  if(ring){
+    var cols = ['#4A7FF8','#7E9EF8','#B9CAFB','#1F3A6E','#FF7648','#FFB79A','#FFC757','#F6A5B6','#8B6FE0'], C = 2 * Math.PI * 52, seg = C / 9, html = '';
+    cols.forEach(function(c, i){ html += '<circle cx="75" cy="75" r="52" stroke="' + c + '" stroke-dasharray="' + (seg - 3) + ' ' + (C - seg + 3) + '" stroke-dashoffset="' + (-i * seg) + '" transform="rotate(-90 75 75)" class="rs"/>'; });
+    ring.innerHTML = html;
+    if(G) G.from($$('.rs', ring), {opacity:0, scale:.6, transformOrigin:'75px 75px', duration:.5, ease:'back.out(2)', stagger:.07, scrollTrigger:{trigger:ring, start:'top 85%', once:true}});
+  }
+
+  /* ---------- anatomy ---------- */
+  var MODE = 'uk';
+  var A = [
+    ['Адрес отправителя','Sender\'s address', function(){ return MODE === 'uk' ? 'В британском письме справа сверху. Имя не пишем: оно будет в подписи.' : 'В американском письме слева сверху, над датой. Имя тоже не пишем.'; }],
+    ['Дата','Date', function(){ return MODE === 'uk' ? 'Число, месяц словами, год: 20 November 2026. Стоит под адресом.' : 'Месяц, число, запятая, год: November 20, 2026.'; }],
+    ['Адрес получателя','Inside address', function(){ return MODE === 'uk' ? 'Слева. Имя, должность, компания, улица, город, индекс, страна.' : 'Слева. Между городом и индексом штат двумя буквами: Springfield, OR 97477.'; }],
+    ['Обращение','Salutation', function(){ return MODE === 'uk' ? 'Dear Ms Bianchi, без точки после Ms и с запятой в конце.' : 'Dear Ms. Bianchi: с точкой после Ms. и двоеточием в конце.'; }],
+    ['Вступление','Opening', function(){ return 'Одна фраза: зачем ты пишешь. Получатель понимает цель с первой строки.'; }],
+    ['Основная часть','Body', function(){ return 'Суть. Один абзац, одна мысль. Плохие новости тоже сюда.'; }],
+    ['Заключение','Closing paragraph', function(){ return 'Чего ждёшь: ответа, встречи, документа. Плюс вложения.'; }],
+    ['Вежливое окончание','Sign-off', function(){ return 'Yours sincerely, если знаешь фамилию. Yours faithfully, если нет.'; }],
+    ['Подпись','Signature', function(){ return 'Имя и фамилия. Ниже должность, если нужна.'; }]
+  ];
+  var lbs = $$('#paper .lb'), cur = 0, autoA = null, userTouched = false;
+  function showA(i){
+    cur = i; lbs.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    $('#infoN').textContent = i + 1;
+    $('#infoT').innerHTML = esc(A[i][0]) + '<small>' + esc(A[i][1]) + '</small>';
+    $('#infoP').textContent = A[i][2]();
+    if(G) G.fromTo('#info .big', {scale:.6, rotation:-12}, {scale:1, rotation:0, duration:.6, ease:'elastic.out(1,.5)'});
+  }
+  lbs.forEach(function(b){ b.addEventListener('click', function(){ userTouched = true; clearInterval(autoA); showA(+b.dataset.i); }); });
+  whenVisible($('#paper'), function(){ if(userTouched || autoA) return; autoA = setInterval(function(){ showA((cur + 1) % 9); }, 2200); }, function(){ clearInterval(autoA); autoA = null; }, .4);
+  showA(0);
+
+  function flipMove(els, change){
+    var first = els.map(function(e){ return e.getBoundingClientRect(); });
+    change();
+    if(!G) return;
+    els.forEach(function(e, i){ var l = e.getBoundingClientRect(); G.fromTo(e, {x:first[i].left - l.left, y:first[i].top - l.top}, {x:0, y:0, duration:.8, ease:'power3.inOut'}); });
+  }
+  var DAYSEL = 20;
+  function fmtUK(d){ return d + ' November 2026'; }
+  function fmtUS(d){ return 'November ' + d + ', 2026'; }
+  function setMode(m){
+    MODE = m;
+    $$('#mode button').forEach(function(b){ b.classList.toggle('on', b.dataset.m === m); });
+    $('#modeNote').textContent = m === 'uk' ? 'Британский формат' : 'Американский формат';
+    flipMove([lbs[0], lbs[1]], function(){
+      lbs[0].classList.toggle('right', m === 'uk'); lbs[1].classList.toggle('right', m === 'uk');
+      $('#lDate').textContent = m === 'uk' ? fmtUK(DAYSEL) : fmtUS(DAYSEL);
+      $('#lCity').textContent = m === 'uk' ? 'London SW6 3BU, UK' : 'Springfield, OR 97477, USA';
+      $('#lDear').textContent = m === 'uk' ? 'Dear Ms Bianchi,' : 'Dear Ms. Bianchi:';
+    });
+    if(G) G.fromTo(['#lCity','#lDear','#lDate'], {color:'#4A7FF8'}, {color:'#202020', duration:1.2, delay:.4});
+    showA(cur); salRefresh();
+  }
+  $$('#mode button').forEach(function(b){ b.addEventListener('click', function(){ setMode(b.dataset.m); }); });
+
+  /* ---------- calendar ---------- */
+  var days = $('#days'), bars = {2:'#FFC757',4:'#FF7648',6:'#F6A5B6',9:'#8E2B2B',11:'#FF7648',13:'#7E9EF8',17:'#FFC757',18:'#F2554B',20:'#4A7FF8',23:'#7E9EF8',25:'#FF7648',27:'#8E2B2B',30:'#F6A5B6'};
+  var dh = '';
+  [26,27,28,29,30,31].forEach(function(d){ dh += '<button type="button" class="mute" tabindex="-1"><em>' + d + '</em><i></i></button>'; });
+  for(var d = 1; d <= 30; d++) dh += '<button type="button" data-d="' + d + '"' + (d === 20 ? ' class="sel"' : '') + '><em>' + d + '</em><i style="background:' + (bars[d] || 'transparent') + '"></i></button>';
+  days.innerHTML = dh;
+  $$('button[data-d]', days).forEach(function(b){
+    b.addEventListener('click', function(){
+      $$('button', days).forEach(function(x){ x.classList.remove('sel'); }); b.classList.add('sel');
+      DAYSEL = +b.dataset.d;
+      $('#dUK').textContent = fmtUK(DAYSEL); $('#dUS').textContent = fmtUS(DAYSEL);
+      $('#lDate').textContent = MODE === 'uk' ? fmtUK(DAYSEL) : fmtUS(DAYSEL);
+      if(G) G.fromTo('.datebox b', {y:10, opacity:.3}, {y:0, opacity:1, duration:.4, stagger:.06, ease:'power2.out'});
+    });
+  });
+  if(G) G.from($$('button i', days), {scaleX:.3, duration:.5, ease:'back.out(2)', stagger:.015, scrollTrigger:{trigger:days, start:'top 85%', once:true}});
+
+  /* ---------- salutation chat ---------- */
+  var SAL = [
+    ['Ничего', function(){ return 'To whom it may concern' + (MODE === 'us' ? ':' : ','); }, 'Самый холодный вариант. Подходит, когда пишешь в организацию вообще.'],
+    ['Только должность', function(){ return 'Dear Hiring Manager' + (MODE === 'us' ? ':' : ','); }, 'Знаешь роль, но не человека. Работает и с Admissions Officer.'],
+    ['Только пол', function(){ return 'Dear Sir' + (MODE === 'us' ? ':' : ',') + ' / Dear Madam' + (MODE === 'us' ? ':' : ','); }, 'Редкий случай. Если не уверен, лучше по должности.'],
+    ['Фамилию', function(){ var p = MODE === 'us' ? '.' : ''; return 'Dear Ms' + p + ' Walker' + (MODE === 'us' ? ':' : ','); }, 'Ms, если не знаешь семейное положение. Есть звание? Пиши Dr или Prof.'],
+    ['Имя, но не пол', function(){ return 'Dear Alex Morgan' + (MODE === 'us' ? ':' : ','); }, 'Имя и фамилия целиком. Без Mr и Ms, и никто не обидится.'],
+    ['Команду', function(){ return 'Dear colleagues' + (MODE === 'us' ? ':' : ','); }, 'Группа людей, с которыми ты работаешь.'],
+    ['Мы давно на ты', function(){ return 'Dear Gary,'; }, 'Самый тёплый вариант. Только когда вы правда общаетесь.']
+  ];
+  var salchat = $('#salchat'), salopts = $('#salopts'), lastSal = null, lastRes = null;
+  salopts.innerHTML = SAL.map(function(s, i){ return '<button type="button" class="opt" data-i="' + i + '">' + esc(s[0]) + '</button>'; }).join('');
+  function salRefresh(){ if(lastSal !== null && lastRes) lastRes.textContent = SAL[lastSal][1](); }
+  $$('.opt', salopts).forEach(function(b){
+    b.addEventListener('click', function(){
+      var i = +b.dataset.i; lastSal = i;
+      $$('.opt', salopts).forEach(function(x){ x.classList.toggle('on', x === b); });
+      $$('.me, .bot.ans', salchat).forEach(function(x){ x.remove(); });
+      var me = document.createElement('p'); me.className = 'me'; me.textContent = SAL[i][0];
+      var bot = document.createElement('p'); bot.className = 'bot ans';
+      bot.innerHTML = 'Тогда пиши так:<span class="res"></span><span class="why">' + esc(SAL[i][2]) + '</span>';
+      salchat.appendChild(me); salchat.appendChild(bot);
+      lastRes = $('.res', bot); lastRes.textContent = SAL[i][1]();
+      if(G){ G.from(me, {x:30, scale:.8, duration:.5, ease:'back.out(2)'}); G.from(bot, {y:20, duration:.6, delay:.15, ease:'back.out(2)'}); }
+      salchat.scrollTop = salchat.scrollHeight;
+      say(SAL[i][1]().replace(/[,:]$/,''));
+    });
+  });
+  $('#salMic').addEventListener('click', function(){ say(lastRes ? lastRes.textContent : 'To whom it may concern', this); });
+
+  /* ---------- opening phrases ---------- */
+  var OP = {
+    'Ответ':[['I am writing in response to your email of 12 May.','Пишу в ответ на ваше письмо от 12 мая.'],['Further to your last email, I would like to confirm the date.','В продолжение вашего письма хочу подтвердить дату.'],['With reference to our phone call, I am sending the documents.','Ссылаясь на наш звонок, отправляю документы.']],
+    'Спасибо':[['Thank you for your email regarding the internship.','Спасибо за письмо о стажировке.'],['Thank you for contacting us.','Спасибо, что связались с нами.'],['I appreciate your patience in waiting for a response.','Ценю ваше терпение и ожидание ответа.']],
+    'Цель':[['I am writing to inform you that the meeting is cancelled.','Пишу сообщить, что встреча отменяется.'],['I am writing to confirm my booking.','Пишу подтвердить бронь.'],['I am writing to enquire about your Master\'s programme.','Пишу уточнить про вашу магистратуру.']],
+    'Просьба':[['I am writing to ask whether you could send me the schedule.','Пишу спросить, не могли бы вы прислать расписание.'],['I would be grateful if you could reply by Friday.','Буду благодарен, если ответите до пятницы.'],['Could you possibly tell me more about the course?','Не могли бы вы рассказать о курсе подробнее?']],
+    'Вакансия':[['I am writing to apply for the position of junior designer.','Пишу откликнуться на вакансию младшего дизайнера.'],['I am writing regarding the vacancy posted on LinkedIn.','Пишу по поводу вакансии на LinkedIn.']],
+    'Жалоба':[['I am writing to complain about the quality of the service.','Пишу пожаловаться на качество обслуживания.'],['I am writing in connection with my order, which arrived damaged.','Пишу насчёт заказа, который пришёл повреждённым.']]
+  };
+  var otabs = $('#otabs'), ophr = $('#ophr');
+  function phHTML(p){ return '<div class="ph"><div class="tx"><div class="en">' + esc(p[0]) + '</div><div class="ru">' + esc(p[1]) + '</div></div><button class="say" type="button" data-say="' + esc(p[0]) + '" aria-label="Послушать"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>'; }
+  otabs.innerHTML = Object.keys(OP).map(function(k, i){ return '<button type="button" class="opt' + (i ? '' : ' on') + '">' + k + '</button>'; }).join('');
+  function showOp(k){
+    ophr.innerHTML = OP[k].map(phHTML).join('');
+    if(G) G.from($$('.ph', ophr), {y:24, scale:.97, duration:.5, ease:'back.out(2)', stagger:.06});
+  }
+  $$('.opt', otabs).forEach(function(b){ b.addEventListener('click', function(){ $$('.opt', otabs).forEach(function(x){ x.classList.toggle('on', x === b); }); showOp(b.textContent); }); });
+  showOp('Ответ');
+
+  /* ---------- water remover ---------- */
+  var W = [
+    {t:['I just wanted to quickly reach out and', '|kindly| ask', 'if it would maybe be possible for you to', 'possibly send me the report', 'at some point'], r:'Could you send me the report?'},
+    {t:['I am writing this letter in order to', '|let you know| that', 'I would like to', 'very much', 'apply for the internship'], r:'I am writing to apply for the internship.'},
+    {t:['The meeting', 'could be held by us', 'on Thursday', 'if that is something that works for you'], r:'We could meet on Thursday.'}
+  ];
+  var wi = 0, wdone = false;
+  function drawW(){
+    var it = W[wi], h = '';
+    it.t.forEach(function(seg){ h += '<span class="del">' + esc(seg.replace(/\|/g,'')) + ' </span>'; });
+    h += '<span class="add">' + esc(it.r) + '</span>';
+    $('#wtext').innerHTML = h; $('#wtext').style.height = ''; $('#wNum').textContent = (wi + 1) + '/' + W.length;
+    $('#wbar').style.transform = 'scaleX(1)'; $('#wbar').style.background = ''; $('#wpct').textContent = '100%';
+    wdone = false; $('#wGo').disabled = false;
+  }
+  $('#wGo').addEventListener('click', function(){
+    if(wdone) return; wdone = true;
+    var dels = $$('#wtext .del');
+    dels.forEach(function(d){ d.classList.add('strike'); });
+    setTimeout(function(){ dels.forEach(function(d){ d.classList.add('fade'); }); }, 700);
+    setTimeout(function(){
+      var p = $('#wtext'), h0 = p.offsetHeight;
+      dels.forEach(function(d){ d.classList.add('gone'); }); $('#wtext .add').classList.add('in');
+      if(G){ G.fromTo(p, {height:h0}, {height:'auto', duration:.6, ease:'power3.out'}); G.from('#wtext .add', {y:16, duration:.6, ease:'back.out(2)'}); }
+      $('#wbar').style.transform = 'scaleX(.06)'; $('#wbar').style.background = 'var(--blue)'; $('#wpct').textContent = '0%';
+    }, 1150);
+    setTimeout(function(){ say(W[wi].r); }, 1300);
+  });
+  $('#wNext').addEventListener('click', function(){ wi = (wi + 1) % W.length; drawW(); });
+  drawW();
+
+  /* ---------- rewrite cards ---------- */
+  var RW = [['Send me the report.','Could you send me the report?'],['Will you call me tomorrow?','Would you call me tomorrow?'],['Our meeting could be held on Thursday.','We could meet on Thursday.'],['I can\'t attend.','I am unable to attend.'],['Give me feedback.','I would appreciate any feedback.'],['Maybe it is a good idea if…','We suggest…']];
+  $('#rw').innerHTML = RW.map(function(r){ return '<button type="button" class="flipc rv"><div class="in"><div class="fa"><span class="l">Звучит как приказ <svg class="ic"><use href="#i-shuffle"/></svg></span><span class="t">' + esc(r[0]) + '</span></div><div class="fb"><span class="l">Вежливо <svg class="ic"><use href="#i-check"/></svg></span><span class="t">' + esc(r[1]) + '</span></div></div></button>'; }).join('');
+  $$('#rw .flipc').forEach(function(c, i){ c.addEventListener('click', function(){ c.classList.toggle('on'); if(c.classList.contains('on')) say(RW[i][1]); }); });
+  if(G) ScrollTrigger.batch('#rw .rv', {start:'top 92%', once:true, onEnter:function(b){ G.from(b, {y:40, duration:.8, ease:'power3.out', stagger:.07}); }});
+
+  var BN = [['We regret to inform you that…','С сожалением сообщаем, что…'],['Unfortunately, we are unable to…','К сожалению, мы не можем…'],['I am afraid it will not be possible to…','Боюсь, не получится…'],['After careful consideration, we have decided to…','Всё взвесив, мы решили…']];
+  $('#badnews').innerHTML = BN.map(phHTML).join('');
+
+  /* ---------- closing ---------- */
+  var CL = [['Знаю фамилию','Yours sincerely,','Официально, имя известно','t-lav'],['Не знаю имени','Yours faithfully,','To whom it may concern в начале','t-peach'],['Коллеги, партнёры','Kind regards,','Нейтрально и тепло','t-sand'],['Пишем часто','Best regards,','Чуть легче','t-lav'],['Давно на ты','Best,','Коротко. Только для своих','t-peach']];
+  var co = $('#closeOpts');
+  co.innerHTML = CL.map(function(c, i){ return '<button type="button" class="opt' + (i ? '' : ' on') + '" data-i="' + i + '">' + esc(c[0]) + '</button>'; }).join('');
+  $$('.opt', co).forEach(function(b){
+    b.addEventListener('click', function(){
+      var c = CL[+b.dataset.i];
+      $$('.opt', co).forEach(function(x){ x.classList.toggle('on', x === b); });
+      $('#wSign').textContent = c[1]; $('#wWhy').textContent = c[2]; $('#wTag').className = 'tag ' + c[3];
+      if(G) G.fromTo('.watch .note', {y:50, scale:.9}, {y:0, scale:1, duration:.7, ease:'back.out(2)'});
+      say(c[1].replace(',', ''));
+    });
+  });
+  var FN = [['Please find attached my CV.','Прикладываю резюме.'],['If you require more information, please let me know.','Если нужна дополнительная информация, дайте знать.'],['Please do not hesitate to contact me.','Не стесняйтесь обращаться.'],['I look forward to hearing from you.','Жду вашего ответа.'],['I would appreciate your reply at your earliest convenience.','Буду благодарен за ответ, как будет возможность.'],['Please give this matter your immediate attention.','Прошу срочно обратить внимание на этот вопрос.']];
+  $('#finals').innerHTML = FN.map(phHTML).join('');
+  if(G){
+    var wt = $('#wTime'), t0 = 17 * 60 + 26;
+    whenVisible(wt, function(){ var o = {m:t0}; G.to(o, {m:t0 + 4, duration:2, ease:'steps(4)', onUpdate:function(){ var m = Math.round(o.m); wt.textContent = Math.floor(m / 60) + ':' + ('0' + m % 60).slice(-2); }}); }, null, .5);
+  }
+
+  /* ---------- treemap ---------- */
+  $$('#tree button').forEach(function(b){ b.addEventListener('click', function(){ b.classList.toggle('open'); }); });
+  if(G) G.from('#tree button', {scale:.85, transformOrigin:'center', duration:.7, ease:'back.out(1.8)', stagger:.07, scrollTrigger:{trigger:'#tree', start:'top 85%', once:true}});
+
+  /* ---------- example email ---------- */
+  var LG = ['Обращение','Вступление','Основная часть','Заключение и вложение','Ожидание ответа','Прощание и подпись'];
+  var legend = $('#legend'), mps = $$('#mailbody p'), mcur = 0, mauto = null;
+  legend.innerHTML = LG.map(function(l, i){ return '<button type="button" data-i="' + i + '"><i>' + (i + 1) + '</i>' + esc(l) + '</button>'; }).join('');
+  function litM(i){ mcur = i; mps.forEach(function(p, k){ p.classList.toggle('lit', k === i); }); $$('button', legend).forEach(function(b, k){ b.classList.toggle('on', k === i); }); }
+  $$('button', legend).forEach(function(b){ b.addEventListener('click', function(){ clearInterval(mauto); mauto = 'stop'; litM(+b.dataset.i); }); });
+  whenVisible($('#mail'), function(){ if(mauto) return; mauto = setInterval(function(){ litM((mcur + 1) % mps.length); }, 1900); }, function(){ if(mauto !== 'stop'){ clearInterval(mauto); mauto = null; } }, .4);
+  litM(0);
+  $$('#lang button').forEach(function(b){ b.addEventListener('click', function(){ $$('#lang button').forEach(function(x){ x.classList.toggle('on', x === b); }); $('#mail').classList.toggle('ru', b.dataset.l === 'ru'); }); });
+  $('#mailSay').addEventListener('click', function(){ say($$('#mailbody .en').map(function(e){ return e.textContent; }).join(' '), this); });
+
+  /* ---------- youtube lite ---------- */
+  var yt = $('#yt');
+  $('button', yt).addEventListener('click', function(){
+    yt.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + yt.dataset.id + '?autoplay=1&rel=0" title="Видео: деловое письмо на английском" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  });
+
+  /* ---------- confetti ---------- */
+  function confetti(host, n){
+    if(!G) return;
+    var colors = ['#4A7FF8','#FF7648','#FFC757','#7E9EF8','#F6A5B6','#1F3A6E'];
+    for(var i = 0; i < n; i++){
+      var c = document.createElement('i'); c.className = 'conf'; c.style.background = colors[i % colors.length]; host.appendChild(c);
+      G.fromTo(c, {x:0, y:0, rotation:0}, {x:G.utils.random(-260,260), y:G.utils.random(-240,180), rotation:G.utils.random(-540,540), opacity:0, duration:G.utils.random(1,1.8), ease:'power3.out', onComplete:(function(el){ return function(){ el.remove(); }; })(c)});
+    }
+  }
+
+  /* ---------- puzzle ---------- */
+  var PZ = ['Адрес отправителя','Дата','Адрес получателя','Обращение','Вступление','Основная часть','Заключение','Прощание','Подпись'];
+  var slots = $('#slots'), pool = $('#pool'), pstep = 0, puz = $('#puz');
+  function drawP(){
+    pstep = 0; $('#pScore').textContent = '0/9';
+    slots.innerHTML = PZ.map(function(_, i){ return '<div class="slot"><i>' + (i + 1) + '</i><span>?</span></div>'; }).join('');
+    var order = PZ.map(function(_, i){ return i; }).sort(function(){ return Math.random() - .5; });
+    pool.innerHTML = order.map(function(i){ return '<button type="button" class="opt" data-i="' + i + '">' + esc(PZ[i]) + '</button>'; }).join('');
+    $$('.opt', pool).forEach(function(b){ b.addEventListener('click', function(){ pick(b); }); });
+  }
+  function pick(b){
+    var i = +b.dataset.i;
+    if(i !== pstep){ if(G) G.fromTo(b, {x:-8}, {x:0, duration:.5, ease:'elastic.out(1.2,.2)'}); b.style.background = '#FFE1D4'; setTimeout(function(){ b.style.background = ''; }, 500); return; }
+    var s = $$('.slot', slots)[pstep];
+    s.classList.add('fill'); $('span', s).textContent = PZ[i];
+    if(G){
+      var br = b.getBoundingClientRect(), sr = s.getBoundingClientRect();
+      G.from(s, {x:br.left - sr.left, y:br.top - sr.top, scale:.9, duration:.55, ease:'power3.out'});
+    }
+    b.classList.add('used'); pstep++; $('#pScore').textContent = pstep + '/9';
+    if(pstep === 9){
+      confetti(puz, 40);
+      var done = document.createElement('div'); done.className = 'cta-row'; done.style.marginTop = '4px';
+      done.innerHTML = '<span style="font-size:20px;letter-spacing:-.02em">Скелет собран. <span class="hi">Ты готов писать.</span></span><button type="button" class="btn light" id="pAgain"><svg class="ic"><use href="#i-shuffle"/></svg>Ещё раз</button>';
+      pool.innerHTML = ''; pool.appendChild(done);
+      $('#pAgain').addEventListener('click', drawP);
+    }
+  }
+  drawP();
+
+  /* ---------- quiz ---------- */
+  var Q = [
+    {q:'Имени получателя не знаешь. Начинаешь письмо так: ___', o:['Hey team,','To whom it may concern,','Dear Friend,'], c:1, x:'To whom it may concern это обращение к тому, кого не знаешь. Hey и Dear Friend для чата.'},
+    {q:'Начал с «Dear Ms Walker». Заканчиваешь: ___', o:['Yours faithfully,','Yours sincerely,','Cheers,'], c:1, x:'Фамилия известна, значит Sincerely. S как Surname.'},
+    {q:'Американская дата выглядит так: ___', o:['20 November 2026','November 20, 2026','2026, 20 Nov'], c:1, x:'В США сначала месяц, потом число, запятая и год.'},
+    {q:'Вежливая просьба про отчёт: ___', o:['Send me the report.','Could you send me the report?','You will send me the report.'], c:1, x:'Could превращает приказ в просьбу. Will и повелительное звучат резко.'},
+    {q:'Обращение в американском письме: Dear Mr. Reynolds___', o:[',',':','.'], c:1, x:'В US после обращения двоеточие, а после Mr ставят точку.'},
+    {q:'Please find ___ my CV.', o:['attached','attaching','attach'], c:0, x:'Please find attached: «прикладываю». Устойчивая фраза для вложений.'}
+  ];
+  var qz = $('#qz'), qi = 0, res = [];
+  function qbar(){ return '<div class="qbar">' + Q.map(function(_, i){ return '<i class="' + (res[i] === true ? 'ok' : res[i] === false ? 'bad' : i === qi ? 'cur' : '') + '"></i>'; }).join('') + '</div>'; }
+  function drawQ(){
+    var it = Q[qi];
+    qz.innerHTML = qbar() + '<p class="qn">Вопрос ' + (qi + 1) + ' из ' + Q.length + '</p>' +
+      '<p class="qq">' + esc(it.q).replace('___', '<u id="blank">___</u>') + '</p>' +
+      '<div class="qo">' + it.o.map(function(o, i){ return '<button type="button" data-i="' + i + '">' + esc(o) + '</button>'; }).join('') + '</div>' +
+      '<div class="qx" id="qx"><svg class="ic"><use href="#i-brain"/></svg><span>Выбери вариант. Шпаргалка ниже, но ты справишься.</span></div>';
+    $$('.qo button', qz).forEach(function(b){ b.onclick = function(){ answer(+b.dataset.i); }; });
+    if(G) G.from($$('.qo button', qz), {y:20, scale:.95, duration:.5, ease:'back.out(2)', stagger:.06});
+  }
+  function answer(i){
+    var it = Q[qi], ok = i === it.c; res[qi] = ok;
+    $$('.qo button', qz).forEach(function(b){ b.disabled = true; var k = +b.dataset.i; if(k === it.c) b.classList.add('ok'); else if(k === i) b.classList.add('bad'); });
+    var chosen = $$('.qo button', qz)[i];
+    if(G){ ok ? G.fromTo(chosen, {scale:.9}, {scale:1, duration:.6, ease:'elastic.out(1,.4)'}) : G.fromTo(chosen, {x:-8}, {x:0, duration:.5, ease:'elastic.out(1.2,.2)'}); }
+    $('#blank').textContent = it.o[it.c];
+    var qx = $('#qx'); qx.classList.toggle('bad', !ok);
+    qx.innerHTML = '<svg class="ic"><use href="#i-' + (ok ? 'circle-check' : 'circle-x') + '"/></svg><span>' + (ok ? '<b>Верно.</b> ' : '<b>Мимо.</b> ') + esc(it.x) + '</span>';
+    if(ok) confetti(qz, 12);
+    $('.qbar', qz).outerHTML = qbar();
+    var nb = document.createElement('button'); nb.className = 'btn qnext'; nb.type = 'button';
+    nb.innerHTML = qi < Q.length - 1 ? 'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>' : 'Результат <svg class="ic"><use href="#i-trophy"/></svg>';
+    nb.onclick = function(){ qi++; qi < Q.length ? drawQ() : done(); };
+    qz.appendChild(nb); nb.focus({preventScroll:true});
+  }
+  function done(){
+    var s = res.filter(Boolean).length, AD = !!document.getElementById('platform');
+    var msg = s === 6 ? 'Шесть из шести. Можно писать профессору.' : s >= 4 ? 'Почти. Перечитай обращения и даты. Там все и спотыкаются.' : 'Первый раз у всех так. Пролистай шпаргалку и попробуй ещё.';
+    var link = AD ? '<a class="btn light" href="#platform">Что дальше →</a>' : '<a class="btn light" href="#cheat">Шпаргалка →</a>';
+    qz.innerHTML = qbar() + '<div class="qres"><div class="score">' + s + '/6</div><p class="qq" style="margin:6px auto 0;max-width:22ch">' + msg + '</p><div class="cta-row" style="justify-content:center"><button type="button" class="btn" id="again"><svg class="ic"><use href="#i-rotate-ccw"/></svg> Ещё раз</button>' + link + '</div></div>';
+    $('#again').onclick = function(){ qi = 0; res = []; drawQ(); };
+    if(G){ G.from('.qres .score', {scale:.4, rotation:-12, duration:1, ease:'elastic.out(1,.4)'}); confetti(qz, s * 8); }
+  }
+  drawQ();
+
+  /* ---------- videos (ad) ---------- */
+  var pio = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ var v = en.target; if(v.dataset.poster) v.poster = v.dataset.poster; pio.unobserve(v); } }); }, {rootMargin:'900px 0px'}) : null;
+  $$('video.vid').forEach(function(v){
+    pio ? pio.observe(v) : (v.poster = v.dataset.poster);
+    whenVisible(v, function(){ try{ v.preload = 'auto'; var p = v.play(); p && p.catch(function(){}); }catch(e){} }, function(){ try{ v.pause(); }catch(e){} });
+  });
+
+  if(G){ addEventListener('load', function(){ ScrollTrigger.refresh(); }); if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ ScrollTrigger.refresh(); }); }
+}
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', xInit); else xInit();
+</script>
+
+</body>
+</html>
