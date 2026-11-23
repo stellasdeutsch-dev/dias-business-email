@@ -657,7 +657,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
         <div class="grow" style="--o:20%"><a class="gbar" href="#date"><span>Дата</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:28%"><a class="gbar" href="#salute"><span>Обращение</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:36%"><a class="gbar" href="#open"><span>Первая фраза</span><span class="dur">1 мин</span></a></div>
-        <div class="grow" style="--o:44%"><a class="gbar" href="#body"><span>Без воды</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:44%"><a class="gbar" href="#body"><span>Только суть</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:52%"><a class="gbar" href="#close"><span>Финал</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:58%"><a class="gbar" href="#practice"><span>Практика</span><span class="dur">2 мин</span></a></div>
       </div>
@@ -799,7 +799,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
   <svg class="stk r t px d3" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-clip"/></svg>
   <div class="wrap">
     <p class="eyebrow">Основная часть</p>
-    <h2 class="h2 split-h">Суть <span class="hi">без лирики.</span></h2>
+    <h2 class="h2 split-h">Суть <span class="hi">и ничего лишнего.</span></h2>
     <p class="lede">Один абзац. Одна мысль. Если хватает одного абзаца, второй «для солидности» не пиши.</p>
     <div class="split" style="margin-top:34px;align-items:start">
       <div class="water rv" id="water">
@@ -859,11 +859,11 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
     <h2 class="h2 split-h">Шесть правил, <span class="hi">которые видно сразу</span></h2>
     <p class="lede">Тапни на блок. Самое важное занимает больше места.</p>
     <div class="tree" id="tree">
-      <button type="button" class="a"><span class="nn">01</span><span class="tt">Без сокращений</span><span class="ex">I'm, can't, it's оставь для чата. В письме I am, cannot, it is.</span></button>
+      <button type="button" class="a"><span class="nn">01</span><span class="tt">Полные формы</span><span class="ex">I'm, can't, it's оставь для чата. В письме I am, cannot, it is.</span></button>
       <button type="button" class="b"><span class="nn">02</span><span class="tt">Активный залог</span><span class="ex">Не «The meeting could be held on Thursday». А «We could meet on Thursday».</span></button>
       <button type="button" class="c"><span class="nn">03</span><span class="tt">Could · would · might</span><span class="ex">Просишь? Только через них.</span></button>
       <button type="button" class="d"><span class="nn">04</span><span class="tt">Проверь имена</span><span class="ex">Ошибка в фамилии хуже ошибки в грамматике.</span></button>
-      <button type="button" class="e"><span class="nn">05</span><span class="tt">Без смайлов и сленга</span><span class="ex">Никаких 🙂, lol и btw.</span></button>
+      <button type="button" class="e"><span class="nn">05</span><span class="tt">Ни смайлов, ни сленга</span><span class="ex">Никаких 🙂, lol и btw.</span></button>
       <button type="button" class="f"><span class="nn">06</span><span class="tt">I и we</span><span class="ex">I про себя. We, когда понятно, кто это «мы».</span></button>
     </div>
   </div>
@@ -1203,7 +1203,7 @@ function xInit(){
     ['Адрес отправителя','Sender\'s address', function(){ return MODE === 'uk' ? 'В британском письме справа сверху. Имя не пишем: оно будет в подписи.' : 'В американском письме слева сверху, над датой. Имя тоже не пишем.'; }],
     ['Дата','Date', function(){ return MODE === 'uk' ? 'Число, месяц словами, год: 20 November 2026. Стоит под адресом.' : 'Месяц, число, запятая, год: November 20, 2026.'; }],
     ['Адрес получателя','Inside address', function(){ return MODE === 'uk' ? 'Слева. Имя, должность, компания, улица, город, индекс, страна.' : 'Слева. Между городом и индексом штат двумя буквами: Springfield, OR 97477.'; }],
-    ['Обращение','Salutation', function(){ return MODE === 'uk' ? 'Dear Ms Bianchi, без точки после Ms и с запятой в конце.' : 'Dear Ms. Bianchi: с точкой после Ms. и двоеточием в конце.'; }],
+    ['Обращение','Salutation', function(){ return MODE === 'uk' ? 'Dear Ms Bianchi, после Ms точки нет, в конце запятая.' : 'Dear Ms. Bianchi: с точкой после Ms. и двоеточием в конце.'; }],
     ['Вступление','Opening', function(){ return 'Одна фраза: зачем ты пишешь. Получатель понимает цель с первой строки.'; }],
     ['Основная часть','Body', function(){ return 'Суть. Один абзац, одна мысль. Плохие новости тоже сюда.'; }],
     ['Заключение','Closing paragraph', function(){ return 'Чего ждёшь: ответа, встречи, документа. Плюс вложения.'; }],
@@ -1269,7 +1269,7 @@ function xInit(){
     ['Только должность', function(){ return 'Dear Hiring Manager' + (MODE === 'us' ? ':' : ','); }, 'Знаешь роль, но не человека. Работает и с Admissions Officer.'],
     ['Только пол', function(){ return 'Dear Sir' + (MODE === 'us' ? ':' : ',') + ' / Dear Madam' + (MODE === 'us' ? ':' : ','); }, 'Редкий случай. Если не уверен, лучше по должности.'],
     ['Фамилию', function(){ var p = MODE === 'us' ? '.' : ''; return 'Dear Ms' + p + ' Walker' + (MODE === 'us' ? ':' : ','); }, 'Ms, если не знаешь семейное положение. Есть звание? Пиши Dr или Prof.'],
-    ['Имя, но не пол', function(){ return 'Dear Alex Morgan' + (MODE === 'us' ? ':' : ','); }, 'Имя и фамилия целиком. Без Mr и Ms, и никто не обидится.'],
+    ['Имя, но не пол', function(){ return 'Dear Alex Morgan' + (MODE === 'us' ? ':' : ','); }, 'Имя и фамилия целиком. Mr и Ms не нужны, и никто не обидится.'],
     ['Команду', function(){ return 'Dear colleagues' + (MODE === 'us' ? ':' : ','); }, 'Группа людей, с которыми ты работаешь.'],
     ['Мы давно на ты', function(){ return 'Dear Gary,'; }, 'Самый тёплый вариант. Только когда вы правда общаетесь.']
   ];
