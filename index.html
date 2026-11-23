@@ -68,7 +68,7 @@ section{position:relative}
 .chip .cx .ic{font-size:16px;stroke-width:2.4}
 .chip.c-yellow{background:var(--yellow);color:var(--ink)} .chip.c-pink{background:var(--pink);color:var(--ink)} .chip.c-orange{background:var(--orange)} .chip.c-blue{background:var(--blue-2)}
 .chip.c-yellow .cx,.chip.c-pink .cx{box-shadow:0 0 0 2px rgba(255,255,255,.6)}
-.tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border-radius:999px;font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:var(--orange);white-space:nowrap}
+.tag{display:inline-flex;align-items:center;height:26px;padding:0 12px;border-radius:999px;font-size:13px;font-weight:500;color:#fff;background:var(--orange);white-space:nowrap}
 .tag.t-violet{background:var(--violet)} .tag.t-maroon{background:var(--maroon)} .tag.t-red{background:var(--red)} .tag.t-blue{background:var(--blue)} .tag.t-navy{background:var(--navy)}
 .tag.t-lav{background:var(--lav);color:var(--blue)} .tag.t-peach{background:#FFE1D4;color:#D9532A} .tag.t-sand{background:var(--sand);color:#9A6A00}
 .pillrow{display:flex;flex-wrap:wrap;gap:10px}
@@ -85,7 +85,7 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 
 /* top bar + tab bar */
 .topbar{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid rgba(0,0,0,.05)}
-@media(min-width:900px){ .topbar{background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px)} }
+@media(min-width:900px){ .topbar{background:#fff} }
 .topbar .wrap{display:flex;align-items:center;gap:12px;height:58px}
 .brand{display:flex;align-items:center;gap:9px;font-weight:500;font-size:16px;text-decoration:none;letter-spacing:-.02em}
 .brand svg{width:28px;height:28px}
@@ -116,7 +116,7 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 .stage .arc{width:150%;aspect-ratio:1;left:-25%;top:42%}
 .stage .letter{position:absolute;left:50%;bottom:12%;width:min(78%,360px);translate:-50% 0;z-index:2;background:#fff;border-radius:30px;padding:18px 18px 16px;box-shadow:0 30px 60px rgba(31,58,110,.18);font-size:13.5px;line-height:1.45}
 .letter .lh{display:flex;align-items:center;gap:8px;color:var(--mute);font-size:12px;border-bottom:1px solid #F0EEE9;padding-bottom:10px}
-.letter .lh .tag{height:22px;font-size:10.5px}
+.letter .lh .tag{height:22px;font-size:12px}
 .letter .ls{font-size:16px;letter-spacing:-.01em;margin:10px 0 8px}
 .letter p{margin:0 0 6px}
 .letter .sk{display:block;height:8px;border-radius:4px;background:var(--cream);margin:7px 0}
@@ -160,7 +160,7 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 /* gantt */
 .gantt{background:var(--cream);border-radius:var(--r);padding:28px 18px 24px;position:relative;overflow:hidden}
 .gantt h3{font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0 0 22px 6px}
-.gscale{display:grid;grid-template-columns:repeat(5,1fr);font-size:12px;color:var(--mute);letter-spacing:.08em;text-align:center;margin-bottom:10px}
+.gscale{display:grid;grid-template-columns:repeat(5,1fr);font-size:12px;color:var(--mute);text-align:center;margin-bottom:10px}
 .grows{position:relative;display:flex;flex-direction:column;gap:10px}
 .grows::before{content:"";position:absolute;inset:-6px 0;background:repeating-linear-gradient(90deg,transparent 0 calc(20% - 1px),var(--line) calc(20% - 1px) 20%);pointer-events:none}
 .grow{position:relative;display:flex;padding-left:calc(var(--o,0%) * .5)}
@@ -179,8 +179,8 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 .insight .k{font-size:12px;letter-spacing:.12em;color:var(--ink-2);text-transform:uppercase}
 .insight h3{font-weight:400;font-size:24px;line-height:1.15;letter-spacing:-.03em;margin:12px 0 0;max-width:16ch}
 .insight .num{font-size:150px;line-height:.9;letter-spacing:-.07em;color:var(--blue);margin-top:auto;font-weight:300}
-.insight .cap{font-size:12px;letter-spacing:.1em;color:var(--blue);text-transform:uppercase;margin-top:8px}
-.insight.warm{background:linear-gradient(180deg,#FFF6E4 0%,#fff 60%)}
+.insight .cap{font-size:15px;color:var(--blue);margin-top:8px}
+.insight.warm{background:#FFF6E4}
 .insight.warm .num,.insight.warm .cap{color:#E08A2E}
 .insight .ring{width:150px;height:150px;margin-top:auto}
 .insight .ring circle{fill:none;stroke-width:22}
@@ -257,7 +257,7 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 
 /* water remover */
 .water{background:#fff;border-radius:var(--r);padding:24px 20px;box-shadow:0 20px 60px rgba(0,0,0,.06)}
-.water .k{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.water .k{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mute)}
 .wtext{font-size:clamp(20px,5.6vw,28px);line-height:1.35;letter-spacing:-.02em;margin:14px 0 18px}
 .wtext{overflow:hidden}
 .wtext .del{transition:opacity .45s,color .3s;text-decoration-color:var(--red)}
@@ -283,7 +283,7 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 .flipc .fa{background:#FFE1D4}
 .flipc .fb{background:var(--blue);color:#fff;transform:rotateY(180deg)}
 .flipc .t{font-size:21px;line-height:1.25;letter-spacing:-.02em}
-.flipc .l{font-size:12px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.flipc .l{font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 .flipc .fa .l{color:#D9532A}
 
 /* watch */
@@ -295,8 +295,8 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 .watch .face{border-radius:46px;background:#fff;height:270px;padding:26px 18px 18px;text-align:center;position:relative;overflow:hidden}
 .watch .time{font-size:46px;letter-spacing:-.04em;color:var(--blue);line-height:1}
 .watch .date{font-size:13px;margin-top:4px}
-.watch .note{position:absolute;left:10px;right:10px;bottom:10px;border-radius:26px;padding:12px 14px;text-align:left;background:linear-gradient(180deg,#FFF5DD,#FFD9A0);}
-.watch .note .tag{height:22px;font-size:10.5px}
+.watch .note{position:absolute;left:10px;right:10px;bottom:10px;border-radius:26px;padding:12px 14px;text-align:left;background:#FFE7B8}
+.watch .note .tag{height:22px;font-size:12px}
 .watch .note b{display:block;font-weight:400;font-size:19px;letter-spacing:-.02em;margin-top:8px;line-height:1.15}
 .watch .note small{display:block;font-size:12px;color:var(--ink-2);margin-top:4px}
 .watch .crown{position:absolute;right:-9px;top:70px;width:12px;height:42px;border-radius:6px;background:#3a3a3a;z-index:1}
@@ -310,7 +310,7 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 .tree{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:110px;gap:0;border-radius:var(--r);overflow:hidden;margin-top:30px}
 .tree button{position:relative;text-align:left;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden}
 .tree button .nn{font-size:clamp(30px,8vw,46px);letter-spacing:-.05em;line-height:1;font-weight:300}
-.tree button .tt{font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;line-height:1.25}
+.tree button .tt{font-size:15px;margin-top:6px;line-height:1.25}
 .tree button .ex{font-size:13.5px;line-height:1.35;max-height:0;overflow:hidden;transition:max-height .45s var(--ease),margin .3s;text-transform:none;letter-spacing:0}
 .tree button.open .ex{max-height:120px;margin-top:8px}
 .tree .a{grid-column:span 6;grid-row:span 2;background:var(--blue)}
@@ -364,7 +364,7 @@ html.no-tts .say,html.no-tts .mic[data-say]{display:none}
 .qbar{display:flex;gap:6px;margin-bottom:18px}
 .qbar i{flex:1;height:6px;border-radius:3px;background:var(--cream)}
 .qbar i.cur{background:var(--blue-2)} .qbar i.ok{background:var(--blue)} .qbar i.bad{background:var(--orange)}
-.qn{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0}
+.qn{font-size:14px;color:var(--mute);margin:0}
 .qq{font-size:clamp(21px,5.6vw,28px);line-height:1.25;letter-spacing:-.025em;margin:10px 0 20px}
 .qq u{text-decoration:none;color:var(--blue);border-bottom:2px solid var(--blue)}
 .qo{display:grid;gap:8px}
@@ -515,6 +515,97 @@ html.gs .sx{background-size:0% 4px}
 html:not(.gs) .rv{transition:translate .8s var(--ease)}
 html:not(.gs) .rv:not(.in){translate:0 24px}
 @media (prefers-reduced-motion: reduce){ *{animation:none!important;transition:none!important} html{scroll-behavior:auto} }
+
+/* ---- cleanup: no caps labels, no glow, hover everywhere ---- */
+.arc,.scr .grad,.vpanel .grad{display:none}
+.tabs{flex-wrap:wrap;overflow:visible;padding:4px 0 10px;margin:26px 0 0}
+.byline{display:flex;align-items:center;gap:12px;margin-top:22px;font-size:15px;color:var(--ink-2)}
+.byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none}
+.byline b{font-weight:500;color:var(--ink)}
+.btn,.mic,.opt,.say,.seg button,.legend button,.lb,.qo button,.vitem,.vbtn,.vinline,.cs,.ph,.st3,.insight,.fact,.tree button,.tabbar a,.brand,.chip .cx,.vtop .x,.yt button span{transition:background-color .2s,color .2s,translate .3s var(--ease),box-shadow .3s,filter .2s,scale .25s var(--ease)}
+@media (hover:hover){
+  .btn:hover{background:#3A6FE8}
+  .btn.orange:hover{background:#F2653A}
+  .btn.light:hover{background:#F2F1ED}
+  .buy .btn.light:hover,.pcard .btn.light:hover{background:#E9EEFF}
+  .btn.ghost:hover{background:rgba(255,255,255,.22)}
+  .mic:hover{background:#3A6FE8}
+  .opt:not(.on):hover{background:#F2F1ED}
+  .puz .pool .opt:hover{background:var(--cream-2)}
+  .opt.on:hover{background:#FFBE3D}
+  .say:hover{background:#C9D6FF}
+  .say.on:hover{background:#3A6FE8}
+  .seg button:not(.on):hover{background:rgba(0,0,0,.06)}
+  .sec.navy .seg button:not(.on):hover{background:rgba(255,255,255,.12)}
+  .tabbar a:not(.on):hover{background:var(--cream)}
+  .vbtn:hover{background:#CDD9FF}
+  .vinline:hover{background:var(--lav)}
+  .legend button:not(.on):hover{background:#F6F5F1}
+  .lb:not(.on):hover{background:#F6F5F1}
+  .days button[data-d]:not(.sel):hover em{background:var(--cream)}
+  .tree button:hover{filter:brightness(1.07)}
+  .flipc:hover .fa{background:#FFD3C1}
+  .flipc:hover .fb{background:#3A6FE8}
+  .qo button:not(:disabled):hover{background:var(--cream-2)}
+  .vitem:not(.on):hover{background:var(--cream-2)}
+  .vtop .x:hover{background:var(--cream-2)}
+  .chip .cx:hover{background:var(--cream)}
+  .yt:hover button span{background:#3A6FE8}
+  .brand:hover{color:var(--blue)}
+  .cs:hover,.ph:hover,.st3:hover,.insight:hover,.fact:hover,.lvc:hover{translate:0 -3px;box-shadow:0 14px 34px rgba(0,0,0,.08)}
+  .gal figure:hover{translate:0 -4px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 22px 50px rgba(0,0,0,.11)}
+}
+
+/* ---- ad block v2 ---- */
+.btn.ghost{background:rgba(255,255,255,.12);color:#fff}
+.ad-hero .h2{max-width:15ch}
+.ad-sub{margin-top:84px}
+.ad-sub>.lede{max-width:44ch}
+.author{display:grid;gap:14px;margin-top:84px}
+.author figure{position:relative;margin:0;border-radius:28px;overflow:hidden;background:var(--cream)}
+.author img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.author .ap1{aspect-ratio:4/3}
+.author .ap2{display:none}
+.author .atext p{margin:14px 0 0;font-size:16px;line-height:1.55;color:var(--ink-2);max-width:46ch}
+.author .atext .lede{margin-top:18px;font-size:19px;color:var(--ink)}
+.author .sig{margin-top:18px;font-size:15px;color:var(--mute)}
+@media(min-width:600px){ .author{grid-template-columns:1.35fr 1fr} .author .ap2{display:block} .author .atext{grid-column:1/-1} }
+@media(min-width:1000px){ .author{grid-template-columns:1.2fr .72fr 1fr;gap:16px;align-items:stretch} .author .ap1{aspect-ratio:auto;min-height:440px} .author .atext{grid-column:auto;align-self:center;padding-left:18px} }
+.gal{display:grid;gap:14px;margin-top:30px;grid-template-columns:1fr}
+.gal figure{margin:0;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.05),0 14px 40px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:translate .3s var(--ease),box-shadow .3s}
+.gal .pic{position:relative;aspect-ratio:16/10;overflow:hidden;background:#F3F2EE;border-bottom:1px solid #EEECE6}
+.gal img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.gal figcaption{padding:14px 18px 18px;font-size:14.5px;color:var(--ink-2);line-height:1.4}
+.gal figcaption b{display:block;font-weight:500;color:var(--ink);font-size:16px;margin-bottom:3px}
+.gal .big .pic{aspect-ratio:1100/687}
+.gal .tall .pic{aspect-ratio:3/4}
+.gal .dev{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--mute);margin-top:8px}
+.gal .dev .ic{font-size:14px}
+@media(min-width:640px){ .gal{grid-template-columns:1fr 1fr} .gal .big{grid-column:1/-1} .gal .tall{grid-row:span 2} .gal .tall .pic{aspect-ratio:auto;flex:1;min-height:260px} }
+@media(min-width:1000px){ .gal{grid-template-columns:repeat(3,1fr)} .gal .big{grid-column:span 2;grid-row:span 2} }
+.lv{display:grid;gap:10px;margin-top:30px}
+@media(min-width:760px){ .lv{grid-template-columns:repeat(3,1fr)} }
+.lvc{background:var(--cream);border-radius:26px;padding:22px 20px 24px;display:flex;flex-direction:column;gap:10px}
+.lvc .lvn{font-size:46px;letter-spacing:-.05em;line-height:1;font-weight:300;color:var(--blue)}
+.lvc b{font-weight:500;font-size:17px}
+.lvc p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.45}
+.st3{background:var(--cream)}
+.nw{white-space:nowrap}
+.price{display:grid;gap:14px;margin-top:30px}
+@media(min-width:900px){ .price{grid-template-columns:1fr 1.1fr;align-items:stretch} }
+.pcard{background:var(--blue);color:#fff;border-radius:40px;padding:34px 24px;display:flex;flex-direction:column;gap:16px}
+.pcard .amt{font-size:clamp(84px,20vw,140px);letter-spacing:-.06em;line-height:.9;font-weight:300}
+.pcard .once{font-size:22px;letter-spacing:-.02em}
+.pcard p{margin:0;font-size:16px;color:rgba(255,255,255,.82);max-width:34ch}
+.pcard .cta-row{margin-top:auto;padding-top:10px}
+.pcard .btn.light{color:var(--blue)}
+.plist{background:var(--cream);border-radius:40px;padding:30px 24px}
+.plist h3{margin:0;font-weight:400;font-size:26px;letter-spacing:-.03em}
+.plist ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px}
+.plist li{display:flex;gap:14px;align-items:flex-start;font-size:16px;line-height:1.4}
+.plist li span.i{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:18px;flex:none}
+.plist li b{display:block;font-weight:500}
+.plist li small{display:block;font-size:14px;color:var(--ink-2)}
 </style>
 
 </head>
@@ -566,7 +657,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
 <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
 <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
-<symbol id="i-gamepad-2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+
 <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
 <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
 <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
@@ -593,7 +684,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
   <a href="#top" data-sec="hero"><svg class="ic"><use href="#i-house"/></svg>Старт</a>
   <a href="#anatomy" data-sec="anatomy"><svg class="ic"><use href="#i-mail"/></svg>Письмо</a>
   <a href="#practice" data-sec="practice"><svg class="ic"><use href="#i-pen-line"/></svg>Практика</a>
-  <a href="#platform" data-sec="platform" class="stl"><svg class="ic"><use href="#i-star"/></svg>Dias</a>
+  <a href="#platform" data-sec="platform" class="stl"><svg class="ic"><use href="#i-star"/></svg>Курс</a>
   
 </nav>
 
@@ -603,11 +694,11 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <section class="hero" id="hero">
   <div class="wrap">
     <div class="hero-top">
-      <p class="eyebrow"><svg class="ic"><use href="#i-mail"/></svg>Гайд · деловое письмо на английском</p>
       <h1 class="h1 split-h">Письмо, на которое <span class="hi">наконец ответят</span></h1>
-      <p class="lede">Учусь в Риме. Здесь всё решают письма: университет, стажировка, документы. Разбираем деловое письмо за 8 минут.</p>
+      <p class="lede">Учусь в Риме. Здесь почти всё решается письмами: университет, стажировка, документы. Разберём деловое письмо за 8&nbsp;минут.</p>
+      <div class="byline"><img src="media/dias-face.webp" width="240" height="240" alt="Диас, автор гайда" loading="lazy"><span><b>Диас</b>, студент Sapienza, Рим</span></div>
       <div class="meta">
-        <span class="tag t-lav">8 минут</span><span class="tag t-peach">9 частей письма</span><span class="tag t-sand">3 упражнения</span>
+        <span class="tag t-lav">8 минут</span><span class="tag t-peach">9 частей письма</span><span class="tag t-sand">2 упражнения</span>
       </div>
       <div class="cta-row">
         <a class="btn" href="#route">Начать <svg class="ic"><use href="#i-arrow-right"/></svg></a>
@@ -615,7 +706,6 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
       </div>
     </div>
     <div class="stage" id="stage">
-      <div class="arc"></div>
       <div class="letter" aria-hidden="true">
         <div class="lh"><span class="tag t-lav">New mail</span><span>to: l.bianchi@novamedia.co.uk</span></div>
         <div class="ls">Application: Summer Internship</div>
@@ -631,9 +721,6 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
         <span class="chip c-yellow f2">Best regards<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
         <span class="chip c-pink f3">Please find attached<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
         <span class="chip c-orange f4">I look forward to…<button class="cx" type="button" aria-label="Убрать"><svg class="ic"><use href="#i-x"/></svg></button></span>
-        <span class="tag t-violet f5">Study</span>
-        <span class="tag t-maroon f6">Visa</span>
-        <span class="tag t-red f7">Job</span>
       </div>
       <button class="btn light restore" id="restore" type="button"><svg class="ic"><use href="#i-rotate-ccw"/></svg> Вернуть фразы</button>
     </div>
@@ -644,20 +731,18 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ ROUTE (scope of work) ============ -->
 <section class="sec" id="route">
-  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-plane"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Маршрут</p>
     <h2 class="h2 split-h">Что разберём <span class="hi">за 8 минут</span></h2>
     <div class="gantt rv" style="margin-top:34px">
-      <h3>Scope of work</h3>
+      <h3>План урока</h3>
       <div class="gscale"><span>0</span><span>2</span><span>4</span><span>6</span><span>8 мин</span></div>
       <div class="grows" id="grows">
-        <div class="grow" style="padding-left:0;width:42%"><a class="gbar" href="#insights"><span>Три инсайта</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="padding-left:0;width:42%"><a class="gbar" href="#insights"><span>Три цифры</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:10%"><a class="gbar" href="#anatomy"><span>Скелет</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:20%"><a class="gbar" href="#date"><span>Дата</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:28%"><a class="gbar" href="#salute"><span>Обращение</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:36%"><a class="gbar" href="#open"><span>Первая фраза</span><span class="dur">1 мин</span></a></div>
-        <div class="grow" style="--o:44%"><a class="gbar" href="#body"><span>Только суть</span><span class="dur">1 мин</span></a></div>
+        <div class="grow" style="--o:44%"><a class="gbar" href="#body"><span>Основная часть</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:52%"><a class="gbar" href="#close"><span>Финал</span><span class="dur">1 мин</span></a></div>
         <div class="grow" style="--o:58%"><a class="gbar" href="#practice"><span>Практика</span><span class="dur">2 мин</span></a></div>
       </div>
@@ -667,26 +752,21 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ INSIGHTS ============ -->
 <section class="sec dark" id="insights">
-  <svg class="stk r t px d2" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-quote"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Инсайты</p>
-    <h2 class="h2 split-h">Три вещи, после которых <span style="color:#9DB8FF">письма пишутся сами</span></h2>
+    <h2 class="h2 split-h">Деловое письмо <span style="color:#9DB8FF">в трёх цифрах</span></h2>
     <div class="ins-row">
       <div class="insight rv">
-        <span class="k">Insight 1</span>
         <h3>У любого письма есть <span class="hi">скелет</span></h3>
         <svg class="ring" viewBox="0 0 150 150" id="ring"></svg>
         <span class="cap">частей в каждом деловом письме</span>
         <span class="num count" data-to="9" style="font-size:64px;margin-top:6px">9</span>
       </div>
       <div class="insight warm rv">
-        <span class="k">Insight 2</span>
         <h3>Британец и американец пишут <span class="hi-y">одно и то же по-разному</span></h3>
         <span class="num count" data-to="2">2</span>
         <span class="cap">формата: UK и US</span>
       </div>
       <div class="insight rv">
-        <span class="k">Insight 3</span>
         <h3>Вежливость живёт в <span class="hi">трёх словах</span></h3>
         <span class="num count" data-to="3">3</span>
         <span class="cap">could · would · might</span>
@@ -697,12 +777,10 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ ANATOMY ============ -->
 <section class="sec cream" id="anatomy">
-  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-env"/></svg>
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Скелет письма</p>
-      <h2 class="h2 split-h">Девять частей. <span class="hi">Каждая на своём месте.</span></h2>
-      <p class="lede">Нажми на любую часть письма. Переключи UK и US. Смотри, что поедет.</p>
+      <h2 class="h2 split-h">Девять частей <span class="hi">и их порядок</span></h2>
+      <p class="lede">Нажми на любую часть письма. Переключи UK и US, чтобы увидеть, что меняется.</p>
       <div class="ukus"><div class="seg" id="mode"><button type="button" class="on" data-m="uk">UK</button><button type="button" data-m="us">US</button></div><span class="small" id="modeNote">Британский формат</span></div>
       <div class="info" id="info" aria-live="polite"><span class="big" id="infoN">1</span><div><h4 id="infoT">Адрес отправителя</h4><p id="infoP"></p></div></div>
     </div>
@@ -724,20 +802,18 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ DATE ============ -->
 <section class="sec navy" id="date">
-  <svg class="stk r t px d3" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-stamp"/></svg>
   <div class="wrap split rev">
     <div>
-      <p class="eyebrow">Дата</p>
-      <h2 class="h2 split-h">Одна дата. <span style="color:var(--yellow)">Два мира.</span></h2>
-      <p class="lede">Британец пишет число, потом месяц. Американец наоборот. Тыкни в любой день календаря.</p>
+      <h2 class="h2 split-h">Дата <span style="color:var(--yellow)">в UK и US</span></h2>
+      <p class="lede">В Британии пишут сначала число, потом месяц. В США наоборот. Нажми на любой день календаря.</p>
       <div class="swap rv" id="swap"><span class="tag t-blue" id="swTag">UK</span><div class="swrow" id="swrow"><span class="tok" data-k="d">20</span><span class="tok" data-k="m">November</span><span class="tok" data-k="y">2026</span></div></div>
       <div class="trap">
         <div class="trapcard rv">
-          <span class="small" style="color:rgba(255,255,255,.6)">Ловушка</span>
+          <span class="small" style="color:rgba(255,255,255,.6)">Одна запись, две даты</span>
           <div class="big">03/04/2027</div>
-          <div class="two"><div>Лондон читает<b>3 апреля</b></div><div>Нью-Йорк читает<b>4 марта</b></div></div>
+          <div class="two"><div>В Лондоне<b>3 апреля</b></div><div>В Нью-Йорке<b>4 марта</b></div></div>
         </div>
-        <p style="margin:0;color:rgba(255,255,255,.8)">Месяц пиши словами. Тогда не перепутает никто. Даже стажёр.</p>
+        <p style="margin:0;color:rgba(255,255,255,.8)">Пиши месяц словами, тогда дату поймут одинаково.</p>
       </div>
     </div>
     <div class="phone cal rv">
@@ -759,12 +835,10 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ SALUTATION ============ -->
 <section class="sec" id="salute">
-  <svg class="stk r t px d2" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-at"/></svg>
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Обращение</p>
-      <h2 class="h2 split-h">Скажи, кому пишешь. <span class="hi">Обращение найдётся само.</span></h2>
-      <p class="lede">Главный вопрос: что ты знаешь о человеке. Имя, пол, должность или вообще ничего.</p>
+      <h2 class="h2 split-h">Обращение зависит от того, <span class="hi">что ты знаешь о получателе</span></h2>
+      <p class="lede">Имя, пол, должность или ничего. Выбери вариант в чате, и он подскажет обращение.</p>
       <p class="small" style="margin-top:18px">Точка и знак после обращения зависят от режима UK / US в блоке «Скелет».</p>
     </div>
     <div class="phone sal rv">
@@ -775,7 +849,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
           <p class="bot">Отлично. Пишем письмо.<br>Скажи, <span class="hl">что ты знаешь о получателе?</span></p>
           <div class="salopts" id="salopts"></div>
         </div>
-        <div class="ask"><span>Ask Dias anything</span><button class="mic" type="button" id="salMic" aria-label="Послушать"><svg class="ic"><use href="#i-mic"/></svg></button></div>
+        <div class="ask"><span>Послушать обращение</span><button class="mic" type="button" id="salMic" aria-label="Послушать"><svg class="ic"><use href="#i-mic"/></svg></button></div>
       </div>
     </div>
   </div>
@@ -783,11 +857,9 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ OPENING ============ -->
 <section class="sec cream" id="open">
-  <svg class="stk r b px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-quote"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Первая фраза</p>
     <h2 class="h2 split-h">Забудь <span class="hi-o sx">«I hope this email finds you well»</span></h2>
-    <p class="lede">Это вода. Первая строка сразу говорит, зачем ты пишешь. Выбери ситуацию.</p>
+    <p class="lede">Эта фраза ничего не сообщает. Первая строка должна сразу объяснить, зачем ты пишешь. Выбери ситуацию.</p>
     <button class="vinline" type="button" data-vopen><svg class="ic"><use href="#i-volume-2"/></svg>Голос: <b class="vcur">по умолчанию</b><span class="go">Сменить</span></button>
     <div class="tabs" id="otabs"></div>
     <div class="phrases" id="ophr"></div>
@@ -796,11 +868,9 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ BODY ============ -->
 <section class="sec" id="body">
-  <svg class="stk r t px d3" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-clip"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Основная часть</p>
-    <h2 class="h2 split-h">Суть <span class="hi">и ничего лишнего.</span></h2>
-    <p class="lede">Один абзац. Одна мысль. Если хватает одного абзаца, второй «для солидности» не пиши.</p>
+    <h2 class="h2 split-h">Основная часть: <span class="hi">одна мысль на абзац</span></h2>
+    <p class="lede">Если всё помещается в один абзац, второй для солидности добавлять не нужно.</p>
     <div class="split" style="margin-top:34px;align-items:start">
       <div class="water rv" id="water">
         <span class="k"><svg class="ic"><use href="#i-droplets"/></svg>Детектор воды · <span id="wNum">1/3</span></span>
@@ -810,12 +880,12 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
       </div>
       <div>
         <h3 style="font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0">Can и will звучат как приказ. <span class="hi">Could и would как просьба.</span></h3>
-        <p class="small" style="margin:8px 0 0">Тапни карточку, чтобы перевернуть.</p>
+        <p class="small" style="margin:8px 0 0">Нажми на карточку, чтобы увидеть вежливый вариант.</p>
         <div class="rw" id="rw"></div>
       </div>
     </div>
     <div style="margin-top:40px">
-      <h3 style="font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0 0 14px">Плохая новость в бархатной перчатке</h3>
+      <h3 style="font-weight:400;font-size:26px;letter-spacing:-.03em;margin:0 0 14px">Как вежливо сообщить плохую новость</h3>
       <div class="phrases" id="badnews"></div>
     </div>
   </div>
@@ -823,16 +893,14 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ CLOSING ============ -->
 <section class="sec cream" id="close">
-  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-check"/></svg>
   <div class="wrap split rev">
     <div>
-      <p class="eyebrow">Финал и подпись</p>
-      <h2 class="h2 split-h">Закончи так, чтобы <span class="hi">захотелось ответить.</span></h2>
+      <h2 class="h2 split-h">Последний абзац <span class="hi">и подпись</span></h2>
       <p class="lede">Последний абзац просит действие. Потом прощание. Выбери, насколько вы знакомы.</p>
       <div class="pillrow" id="closeOpts" style="margin-top:22px"></div>
       <div class="sf">
-        <div class="s1 rv"><span class="L">S</span><p><b>Sincerely</b> = знаешь <b>Surname</b>. Фамилия есть, значит sincerely.</p></div>
-        <div class="s2 rv"><span class="L">F</span><p><b>Faithfully</b> = <b>Faceless</b>. Лица не знаешь, значит faithfully.</p></div>
+        <div class="s1 rv"><span class="L">S</span><p><b>Sincerely</b> = знаешь <b>Surname</b>. Есть фамилия: sincerely.</p></div>
+        <div class="s2 rv"><span class="L">F</span><p><b>Faithfully</b> = <b>Faceless</b>. Лица не знаешь: faithfully.</p></div>
       </div>
     </div>
     <div class="watchwrap rv">
@@ -853,17 +921,15 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ TIPS treemap ============ -->
 <section class="sec" id="tips">
-  <svg class="stk r t px d2" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-plane"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Правила тона</p>
-    <h2 class="h2 split-h">Шесть правил, <span class="hi">которые видно сразу</span></h2>
-    <p class="lede">Тапни на блок. Самое важное занимает больше места.</p>
+    <h2 class="h2 split-h">Шесть правил <span class="hi">тона</span></h2>
+    <p class="lede">Нажми на блок, чтобы открыть правило. Чем важнее правило, тем больше блок.</p>
     <div class="tree" id="tree">
       <button type="button" class="a"><span class="nn">01</span><span class="tt">Полные формы</span><span class="ex">I'm, can't, it's оставь для чата. В письме I am, cannot, it is.</span></button>
-      <button type="button" class="b"><span class="nn">02</span><span class="tt">Активный залог</span><span class="ex">Не «The meeting could be held on Thursday». А «We could meet on Thursday».</span></button>
-      <button type="button" class="c"><span class="nn">03</span><span class="tt">Could · would · might</span><span class="ex">Просишь? Только через них.</span></button>
+      <button type="button" class="b"><span class="nn">02</span><span class="tt">Активный залог</span><span class="ex">Пиши «We could meet on Thursday» вместо «The meeting could be held on Thursday».</span></button>
+      <button type="button" class="c"><span class="nn">03</span><span class="tt">Could · would · might</span><span class="ex">Просьбу строй через эти слова.</span></button>
       <button type="button" class="d"><span class="nn">04</span><span class="tt">Проверь имена</span><span class="ex">Ошибка в фамилии хуже ошибки в грамматике.</span></button>
-      <button type="button" class="e"><span class="nn">05</span><span class="tt">Ни смайлов, ни сленга</span><span class="ex">Никаких 🙂, lol и btw.</span></button>
+      <button type="button" class="e"><span class="nn">05</span><span class="tt">Ни смайлов, ни сленга</span><span class="ex">Смайлы, lol и btw оставь для переписки с друзьями.</span></button>
       <button type="button" class="f"><span class="nn">06</span><span class="tt">I и we</span><span class="ex">I про себя. We, когда понятно, кто это «мы».</span></button>
     </div>
   </div>
@@ -873,9 +939,8 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <section class="sec cream" id="example">
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Письмо целиком</p>
-      <h2 class="h2 split-h">Собрали. <span class="hi">Отправляем.</span></h2>
-      <p class="lede">Отклик на стажировку. Каждая часть подсвечивается. Переключи на русский, если надо.</p>
+      <h2 class="h2 split-h">Готовое письмо <span class="hi">на стажировку</span></h2>
+      <p class="lede">Части письма подсвечиваются по очереди. Кнопка RU показывает перевод.</p>
       <div class="legend" id="legend"></div>
     </div>
     <div class="phone mail rv" id="mail">
@@ -902,10 +967,9 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <!-- ============ VIDEO ============ -->
 <section class="sec" id="video">
   <div class="wrap">
-    <p class="eyebrow">Видео</p>
-    <h2 class="h2 split-h">Хочешь послушать? <span class="hi">Десять минут на YouTube.</span></h2>
+    <h2 class="h2 split-h">Видеоразбор <span class="hi">на YouTube</span></h2>
     <div class="yt rv" id="yt" data-id="dfBDjB1cM-Q">
-      <img src="https://i.ytimg.com/vi/dfBDjB1cM-Q/hqdefault.jpg" alt="Превью видео про деловое письмо" loading="lazy">
+      <img src="https://i.ytimg.com/vi/dfBDjB1cM-Q/hqdefault.jpg" width="480" height="360" alt="Превью видео про деловое письмо" loading="lazy">
       <button type="button" aria-label="Смотреть видео"><span><svg class="ic"><use href="#i-play"/></svg></span></button>
     </div>
     <div class="ytcap"><span class="tag t-red">YouTube</span><span>EP Advisory · «Как писать деловое письмо Email на английском + готовые фразы» · 9:40</span></div>
@@ -914,13 +978,11 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ PRACTICE ============ -->
 <section class="sec cream" id="practice">
-  <svg class="stk r t px d3" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-env"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Практика</p>
-    <h2 class="h2 split-h">Теперь ты. <span class="hi">Два упражнения.</span></h2>
+    <h2 class="h2 split-h">Практика: <span class="hi">два упражнения</span></h2>
     <p class="lede">Первое: собери скелет по порядку. Второе: шесть вопросов с объяснениями.</p>
     <div class="puz rv" id="puz">
-      <div class="st"><span><b>Собери письмо.</b> Тапай части по порядку сверху вниз.</span><span id="pScore">0/9</span></div>
+      <div class="st"><span><b>Собери письмо.</b> Нажимай на части по порядку сверху вниз.</span><span id="pScore">0/9</span></div>
       <div class="slots" id="slots"></div>
       <div class="pool" id="pool"></div>
     </div>
@@ -932,9 +994,7 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 
 <!-- ============ CHEAT ============ -->
 <section class="sec" id="cheat">
-  <svg class="stk r t px" viewBox="0 0 120 120" aria-hidden="true"><use href="#st-clip"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Шпаргалка</p>
     <h2 class="h2 split-h">Сохрани <span class="hi">скриншотом</span></h2>
     <div class="cheat">
       <div class="cs rv"><div class="top"><span style="background:var(--blue)"><svg class="ic"><use href="#i-list-checks"/></svg></span><h4>Скелет</h4></div><ul><li>Адрес → дата → адрес получателя</li><li>Обращение → вступление → суть</li><li>Заключение → прощание → подпись</li></ul></div>
@@ -953,87 +1013,93 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <section class="sec" id="platform" style="padding-top:20px">
   <div class="wrap">
     <div class="ad-hero rv">
-      <div class="logo-row"><svg><use href="#star"/></svg><div><b>Dias English</b><small>платформа в Notion · A0–C1</small></div></div>
-      <h2 class="h2 split-h">Этот гайд ты прочитал за 8 минут. <span style="color:var(--yellow)">Дальше целая дорожная карта.</span></h2>
-      <p class="lede" style="max-width:36ch">Темы по порядку, ситуации из жизни и трекер, чтобы не бросить. От A0 до C1.</p>
-      <div class="cta-row"><a class="btn orange" href="https://app.lava.top/products/2c950aa0-d8be-4317-8f39-0f9b4016f5da" target="_blank" rel="noopener" data-cta="lava">Открыть платформу <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+      <div class="logo-row"><svg><use href="#star"/></svg><div><b>Dias English</b><small>курс-платформа в Notion · A0–C1</small></div></div>
+      <h2 class="h2">Этот гайд занял 8 минут. <span style="color:var(--yellow)">Дальше дорожная карта до&nbsp;C1.</span></h2>
+      <p class="lede" style="max-width:40ch">Dias English это курс в Notion: темы по порядку, словарь Lexika, разговорная практика с Gemini и трекер привычек. От A0 до C1. <b style="color:#fff;font-weight:500">30 € один раз, доступ навсегда.</b></p>
+      <div class="cta-row"><a class="btn orange" href="https://app.lava.top/products/2c950aa0-d8be-4317-8f39-0f9b4016f5da" target="_blank" rel="noopener" data-cta="lava">Купить за 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a><a class="btn ghost" href="#inside">Посмотреть внутри</a></div>
       <div class="adphones">
-        <div class="phone"><i class="island"></i><div class="scr"><video class="vid" muted playsinline loop preload="none" data-poster="media/n-scroll.jpg" src="media/n-scroll.mp4"></video></div></div>
-        <div class="phone two"><i class="island"></i><div class="scr"><img src="media/n-m-roadmap.webp" alt="Дорожная карта в Notion на телефоне" loading="lazy"></div></div>
-      </div>
-      <div class="arc"></div>
-    </div>
-
-    <div style="margin-top:70px">
-      <p class="eyebrow">Когда вспоминать Dias English</p>
-      <h2 class="h2 split-h">Английский нужен <span class="hi">не по расписанию.</span></h2>
-      <p class="lede">Он нужен в конкретный момент. Вот такие моменты в твоём календаре.</p>
-      <div class="cep">
-        <div class="evcard rv"><div class="tx"><span><span class="tag t-violet">Study</span></span><b>Письмо в университет</b><span class="tm">Скелет и фразы уже знаешь. На B2–C1 есть раздел Writing.</span></div><div class="av" style="background:var(--lav)">U</div></div>
-        <div class="evcard rv"><div class="tx"><span><span class="tag">Work</span></span><b>Собеседование на английском</b><span class="tm">Gemini-ситуации: разыграй разговор до того, как он случится.</span></div><div class="av" style="background:var(--yellow)">J</div></div>
-        <div class="evcard rv"><div class="tx"><span><span class="tag t-maroon">Travel</span></span><b>Аэропорт, отель, такси</b><span class="tm">Готовые ситуации на A1: от регистрации до чаевых.</span></div><div class="av" style="background:var(--peach)">T</div></div>
-        <div class="evcard rv"><div class="tx"><span><span class="tag t-red">Health</span></span><b>Врач и аптека</b><span class="tm">Объяснить, что болит, простыми словами.</span></div><div class="av" style="background:var(--pink)">H</div></div>
-        <div class="evcard rv"><div class="tx"><span><span class="tag t-lav">Self-care</span></span><b>45 минут вечером</b><span class="tm">10 минут слова, 25 тема, 10 слушаешь. Так устроен каждый день карты.</span></div><div class="av" style="background:#B9CAFB">E</div></div>
-        <div class="evcard rv"><div class="tx"><span><span class="tag t-navy">Fun</span></span><b>Выходной от учебника</b><span class="tm">Мультфильмы, YouTube и подкасты, подобранные по уровню.</span></div><div class="av" style="background:var(--sand)">F</div></div>
+        <div class="phone"><i class="island"></i><div class="scr"><video class="vid" muted playsinline loop preload="none" data-poster="media/n-scroll.jpg" src="media/n-scroll.mp4" width="500" height="1083" aria-label="Прокрутка платформы на телефоне"></video></div></div>
+        <div class="phone two"><i class="island"></i><div class="scr"><img src="media/n-m-roadmap.webp" width="500" height="1083" alt="Дорожная карта A0–A1 в Notion на телефоне" loading="lazy"></div></div>
       </div>
     </div>
 
-    <div style="margin-top:70px">
-      <p class="eyebrow">Что внутри</p>
-      <h2 class="h2 split-h">Цифры из самой <span class="hi">дорожной карты</span></h2>
+    <div class="author">
+      <figure class="ap1"><img src="media/dias-study.webp" width="1200" height="900" alt="Диас занимается у окна в Риме, в руках англо-итальянский словарь" loading="lazy"></figure>
+      <figure class="ap2"><img src="media/dias-colosseum.webp" width="900" height="1200" alt="Диас у Колизея в Риме" loading="lazy"></figure>
+      <div class="atext">
+        <h2 class="h2 split-h">Курс собрал <span class="hi">Диас</span></h2>
+        <p class="lede">Я из аула Казыгурт, учился в НИШ, сейчас учусь в Sapienza в Риме. Говорю на английском, итальянском и русском.</p>
+        <p>Курс разложен по уровням от A0 до C1. На каждом уровне своя дорожная карта по неделям. День по карте занимает 45–60 минут: 10 минут слова, 25 минут тема, 10 минут слушаешь.</p>
+      </div>
+    </div>
+
+    <div class="ad-sub" id="inside">
+      <h2 class="h2 split-h">Как курс выглядит <span class="hi">внутри</span></h2>
+      <p class="lede">Настоящие страницы из Notion. Курс открывается с ноутбука и с телефона.</p>
+      <div class="gal">
+        <figure class="big rv"><div class="pic"><img src="media/n-writing.webp" width="1100" height="687" alt="Раздел Writing в Notion: как писать на английском каждый день" loading="lazy"></div><figcaption><b>Раздел Writing</b>Как писать на английском каждый день: заметки, отзывы, письма. Продолжение этого гайда для уровней B2–C1.</figcaption></figure>
+        <figure class="tall rv"><div class="pic"><img src="media/ad-gemini-m.webp" width="720" height="1558" alt="Gemini-ситуации на телефоне: в магазине, на кассе, возврат товара" loading="lazy"></div><figcaption><b>Gemini-ситуации на телефоне</b>Магазин, касса, возврат товара. Проговариваешь разговор с ИИ заранее.</figcaption></figure>
+        <figure class="rv"><div class="pic"><img src="media/ad-roadmap.webp" width="1600" height="1000" alt="Дорожная карта A0–A1: для кого, итог и нагрузка" loading="lazy"></div><figcaption><b>Дорожная карта</b>План на каждую неделю и сколько минут в день.</figcaption></figure>
+        <figure class="rv"><div class="pic"><img src="media/ad-home-b2.webp" width="1600" height="1000" alt="Главная страница уровня B2–C1 с навигацией и подборкой ресурсов" loading="lazy"></div><figcaption><b>Главная уровня</b>Навигация, таймер для фокуса и подборка: мультфильмы, YouTube, подкасты.</figcaption></figure>
+        <figure class="rv"><div class="pic"><img src="media/ad-grammar.webp" width="1100" height="688" alt="Тема грамматики: глагол to be в настоящем времени" loading="lazy"></div><figcaption><b>Темы грамматики</b>Каждая тема на своей странице: коротко, таблицы, примеры.</figcaption></figure>
+        <figure class="rv"><div class="pic"><img src="media/n-lexika.webp" width="1100" height="687" alt="Словарь Lexika: темы с фотографиями" loading="lazy"></div><figcaption><b>Словарь Lexika</b>Слова по темам: работа, сезоны, покупки, еда, путешествия.</figcaption></figure>
+        <figure class="rv"><div class="pic"><img src="media/n-habits.webp" width="1100" height="687" alt="Трекер привычек: Reading, Listening, Speaking, Writing" loading="lazy"></div><figcaption><b>Трекер привычек</b>Reading, Listening, Speaking, Writing: отмечаешь каждый день.</figcaption></figure>
+        <figure class="rv"><div class="pic"><img src="media/n-materials.webp" width="1100" height="653" alt="База материалов: слова, тексты, диалоги, аудио" loading="lazy"></div><figcaption><b>Материалы</b>Списки слов, тексты, диалоги и аудио по уровням.</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="ad-sub">
+      <h2 class="h2 split-h">Три уровня, <span class="hi">у каждого своя карта</span></h2>
+      <div class="lv">
+        <div class="lvc rv"><span class="lvn">A0–A1</span><b>С нуля или почти с нуля</b><p>Звуки и первые фразы, потом быт и времена. База A0 за 6 недель, A1 примерно через 16.</p></div>
+        <div class="lvc rv"><span class="lvn">A2–B1</span><b>Средний уровень</b><p>Своя дорожная карта, грамматика по темам и подборка: сериалы, YouTube, подкасты.</p></div>
+        <div class="lvc rv"><span class="lvn">B2–C1</span><b>Продвинутый уровень</b><p>Своя дорожная карта, раздел Writing и подборка: мультфильмы, YouTube, подкасты.</p></div>
+      </div>
       <div class="facts">
-        <div class="fact f-b rv"><span class="v"><span class="count" data-to="3">3</span></span><span class="d">уровня: A0–A1, A2–B1, B2–C1</span></div>
+        <div class="fact f-b rv"><span class="v"><span class="count" data-to="3">3</span></span><span class="d">уровня: <span class="nw">A0–A1</span>, <span class="nw">A2–B1</span>, <span class="nw">B2–C1</span></span></div>
         <div class="fact f-o rv"><span class="v"><span class="count" data-to="6">6</span> нед.</span><span class="d">база A0 по карте</span></div>
         <div class="fact f-y rv"><span class="v"><span class="count" data-to="16">16</span> нед.</span><span class="d">до A1, с тестом в конце</span></div>
         <div class="fact f-n rv"><span class="v">45–60</span><span class="d">минут в день, 5 дней в неделю</span></div>
       </div>
     </div>
 
-    <div style="margin-top:70px">
-      <p class="eyebrow">Вот как это выглядит в Notion</p>
-      <h2 class="h2 split-h">Открываешь <span class="hi">и идёшь по шагам</span></h2>
-      <div class="shots" id="shots">
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · B2–C1</span></div><img src="media/n-home.webp" alt="Главная B2–C1: навигация, часы и подборка ресурсов" loading="lazy"><p>Главная уровня: навигация, часы для фокуса, мультфильмы, YouTube, подкасты.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Дорожная карта</span></div><img src="media/n-roadmap.webp" alt="Дорожная карта A0–A1" loading="lazy"><p>Дорожная карта: что учить на каждой неделе и сколько минут в день.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Лексика</span></div><img src="media/n-lexika.webp" alt="Лексика по темам с фотографиями" loading="lazy"><p>Лексика по темам: работа, семья, погода, путешествия.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Гайд</span></div><img src="media/n-guide.webp" alt="Гайд по глаголу to be" loading="lazy"><p>Гайд по грамматике: коротко, таблицы, примеры.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Gemini</span></div><img src="media/n-gemini.webp" alt="Ситуации для разговора с ИИ" loading="lazy"><p>Gemini-ситуации: аптека, банк, возврат товара. Разговор до того, как он случится.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Трекер</span></div><img src="media/n-habits.webp" alt="Трекер привычек Reading, Listening, Speaking, Writing" loading="lazy"><p>Трекер: Reading, Listening, Speaking, Writing по дням.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Колесо</span></div><img src="media/n-wheel.webp" alt="Колесо баланса учёбы" loading="lazy"><p>Колесо: сколько минут ушло на грамматику, лексику и упражнения.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Writing</span></div><img src="media/n-writing.webp" alt="Раздел Writing" loading="lazy"><p>Раздел Writing: как писать красиво и уверенно. Прямое продолжение этого гайда.</p></figure>
-        <figure class="shot" style="margin:0"><div class="chrome"><i></i><i></i><i></i><span>notion.site · Материалы</span></div><img src="media/n-materials.webp" alt="База материалов: слова, тексты, диалоги, аудио" loading="lazy"><p>Больше материалов: слова, тексты, диалоги, аудио.</p></figure>
-      </div>
-    </div>
-
-    <div style="margin-top:50px">
-      <div class="gantt rv">
-        <h3>Твой маршрут</h3>
-        <div class="gscale"><span>старт</span><span>нед. 4</span><span>нед. 8</span><span>нед. 12</span><span>нед. 16</span></div>
-        <div class="grows">
-          <div class="grow" style="--o:0%"><span class="gbar"><span>Старт</span><span class="dur">1–3 дня</span></span></div>
-          <div class="grow" style="--o:2%"><span class="gbar"><span>A0: звуки, фразы</span><span class="dur">нед. 1–6</span></span></div>
-          <div class="grow" style="--o:36%"><span class="gbar"><span>A1: быт и времена</span><span class="dur">нед. 7–16</span></span></div>
-          <div class="grow" style="--o:58%"><span class="gbar done"><span>A2–B1 → B2–C1</span><span class="dur">дальше</span></span></div>
+    <div class="ad-sub" id="price">
+      <h2 class="h2 split-h">Цена <span class="hi">и что входит</span></h2>
+      <div class="price">
+        <div class="pcard rv">
+          <span class="amt">30 €</span>
+          <span class="once">один раз, доступ навсегда</span>
+          <p>Оплата на lava.top. Курс открывается в Notion на телефоне и ноутбуке.</p>
+          <div class="cta-row"><a class="btn light" href="https://app.lava.top/products/2c950aa0-d8be-4317-8f39-0f9b4016f5da" target="_blank" rel="noopener" data-cta="lava">Купить за 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a></div>
+        </div>
+        <div class="plist rv">
+          <h3>Что внутри</h3>
+          <ul>
+            <li><span class="i" style="background:var(--blue)"><svg class="ic"><use href="#i-map-pin"/></svg></span><span><b>Дорожная карта</b><small>Уровни A0–C1, план по неделям</small></span></li>
+            <li><span class="i" style="background:var(--navy)"><svg class="ic"><use href="#i-book-open"/></svg></span><span><b>Грамматические темы</b><small>Короткие гайды с таблицами и примерами</small></span></li>
+            <li><span class="i" style="background:var(--orange)"><svg class="ic"><use href="#i-list-checks"/></svg></span><span><b>Словарь Lexika</b><small>Слова по темам с картинками</small></span></li>
+            <li><span class="i" style="background:var(--violet)"><svg class="ic"><use href="#i-message-circle"/></svg></span><span><b>Практика с Gemini</b><small>Ситуации для разговора: магазин, банк, аптека</small></span></li>
+            <li><span class="i" style="background:#E9A21C"><svg class="ic"><use href="#i-chart-column"/></svg></span><span><b>Трекер и привычки</b><small>Reading, Listening, Speaking, Writing по дням</small></span></li>
+            <li><span class="i" style="background:var(--red)"><svg class="ic"><use href="#i-pen-line"/></svg></span><span><b>Раздел Writing</b><small>Как писать на английском каждый день</small></span></li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div style="margin-top:70px">
-      <p class="eyebrow">Как попасть</p>
-      <h2 class="h2 split-h">Три шага. <span class="hi">Созвоны не нужны.</span></h2>
+    <div class="ad-sub">
+      <h2 class="h2 split-h">Три шага <span class="hi">до доступа</span></h2>
       <div class="steps3">
-        <div class="st3 rv"><b>1</b><span>Жмёшь «Открыть платформу»</span></div>
-        <div class="st3 rv"><b>2</b><span>Выбираешь уровень и оплачиваешь</span></div>
-        <div class="st3 rv"><b>3</b><span>Открываешь Notion на телефоне или ноутбуке</span></div>
+        <div class="st3 rv"><b>1</b><span>Нажимаешь «Купить за 30 €»</span></div>
+        <div class="st3 rv"><b>2</b><span>Оплачиваешь на lava.top</span></div>
+        <div class="st3 rv"><b>3</b><span>Открываешь курс в Notion на телефоне или ноутбуке</span></div>
       </div>
     </div>
 
     <div class="buy rv" id="buy">
-      <div class="arc"></div>
-      <div class="logo-row" style="position:relative"><svg><use href="#star"/></svg><div><b>Dias English</b><small style="color:rgba(255,255,255,.75)">A0–C1 · Notion · телефон и ноутбук</small></div></div>
+      <div class="logo-row" style="position:relative"><svg><use href="#star"/></svg><div><b>Dias English</b><small style="color:rgba(255,255,255,.75)">A0–C1 · Notion · 30 € один раз</small></div></div>
       <h2 class="h2">Следующее письмо <span style="color:var(--yellow)">ты напишешь сам.</span></h2>
       <div class="cta-row">
-        <a class="btn light" href="https://app.lava.top/products/2c950aa0-d8be-4317-8f39-0f9b4016f5da" target="_blank" rel="noopener" data-cta="lava">Открыть платформу <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a class="btn light" href="https://app.lava.top/products/2c950aa0-d8be-4317-8f39-0f9b4016f5da" target="_blank" rel="noopener" data-cta="lava">Купить за 30 € <svg class="ic"><use href="#i-arrow-right"/></svg></a>
       </div>
     </div>
   </div>
@@ -1043,9 +1109,8 @@ html:not(.gs) .rv:not(.in){translate:0 24px}
 <div class="vsheet" id="vsheet" role="dialog" aria-modal="true" aria-labelledby="vTitle">
   <div class="vback" data-vclose></div>
   <div class="vpanel">
-    <div class="grad"></div>
     <i class="vhandle"></i>
-    <div class="vtop"><div><p class="eyebrow" style="margin-bottom:6px">Озвучка</p><h3 id="vTitle">Выбери голос</h3></div><button class="x" type="button" data-vclose aria-label="Закрыть"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="vtop"><div><h3 id="vTitle">Выбери голос</h3></div><button class="x" type="button" data-vclose aria-label="Закрыть"><svg class="ic"><use href="#i-x"/></svg></button></div>
     <div class="seg" id="vacc"><button type="button" data-a="GB" class="on">UK</button><button type="button" data-a="US">US</button><button type="button" data-a="all">Все</button></div>
     <div class="vlist" id="vlist"></div>
     <div class="vrate"><span>Скорость</span><div class="seg" id="vrate"><button type="button" data-r=".75">0.75×</button><button type="button" data-r=".92" class="on">0.9×</button><button type="button" data-r="1">1×</button><button type="button" data-r="1.15">1.15×</button></div></div>
@@ -1423,7 +1488,7 @@ function xInit(){
 
   /* ---------- rewrite cards ---------- */
   var RW = [['Send me the report.','Could you send me the report?'],['Will you call me tomorrow?','Would you call me tomorrow?'],['Our meeting could be held on Thursday.','We could meet on Thursday.'],['I can\'t attend.','I am unable to attend.'],['Give me feedback.','I would appreciate any feedback.'],['Maybe it is a good idea if…','We suggest…']];
-  $('#rw').innerHTML = RW.map(function(r){ return '<button type="button" class="flipc rv"><div class="in"><div class="fa"><span class="l">Звучит как приказ <svg class="ic"><use href="#i-shuffle"/></svg></span><span class="t">' + esc(r[0]) + '</span></div><div class="fb"><span class="l">Вежливо <svg class="ic"><use href="#i-check"/></svg></span><span class="t">' + esc(r[1]) + '</span></div></div></button>'; }).join('');
+  $('#rw').innerHTML = RW.map(function(r){ return '<button type="button" class="flipc rv"><div class="in"><div class="fa"><span class="l">Как приказ <svg class="ic"><use href="#i-shuffle"/></svg></span><span class="t">' + esc(r[0]) + '</span></div><div class="fb"><span class="l">Вежливо <svg class="ic"><use href="#i-check"/></svg></span><span class="t">' + esc(r[1]) + '</span></div></div></button>'; }).join('');
   $$('#rw .flipc').forEach(function(c, i){ c.addEventListener('click', function(){ c.classList.toggle('on'); if(c.classList.contains('on')) say(RW[i][1]); }); });
   if(G) ScrollTrigger.batch('#rw .rv', {start:'top 92%', once:true, onEnter:function(b){ G.from(b, {y:40, duration:.8, ease:'power3.out', stagger:.07}); }});
 
@@ -1519,7 +1584,7 @@ function xInit(){
     if(pstep === 9){
       confetti(puz, 40);
       var done = document.createElement('div'); done.className = 'cta-row'; done.style.marginTop = '4px';
-      done.innerHTML = '<span style="font-size:20px;letter-spacing:-.02em">Скелет собран. <span class="hi">Ты готов писать.</span></span><button type="button" class="btn light" id="pAgain"><svg class="ic"><use href="#i-shuffle"/></svg>Ещё раз</button>';
+      done.innerHTML = '<span style="font-size:20px;letter-spacing:-.02em">Все девять частей <span class="hi">на своих местах.</span></span><button type="button" class="btn light" id="pAgain"><svg class="ic"><use href="#i-shuffle"/></svg>Ещё раз</button>';
       pool.innerHTML = ''; pool.appendChild(done);
       $('#pAgain').addEventListener('click', drawP);
     }
@@ -1529,7 +1594,7 @@ function xInit(){
   /* ---------- quiz ---------- */
   var Q = [
     {q:'Имени получателя не знаешь. Начинаешь письмо так: ___', o:['Hey team,','To whom it may concern,','Dear Friend,'], c:1, x:'To whom it may concern это обращение к тому, кого не знаешь. Hey и Dear Friend для чата.'},
-    {q:'Начал с «Dear Ms Walker». Заканчиваешь: ___', o:['Yours faithfully,','Yours sincerely,','Cheers,'], c:1, x:'Фамилия известна, значит Sincerely. S как Surname.'},
+    {q:'Начал с «Dear Ms Walker». Заканчиваешь: ___', o:['Yours faithfully,','Yours sincerely,','Cheers,'], c:1, x:'Фамилия известна, поэтому Sincerely. S как Surname.'},
     {q:'Американская дата выглядит так: ___', o:['20 November 2026','November 20, 2026','2026, 20 Nov'], c:1, x:'В США сначала месяц, потом число, запятая и год.'},
     {q:'Вежливая просьба про отчёт: ___', o:['Send me the report.','Could you send me the report?','You will send me the report.'], c:1, x:'Could превращает приказ в просьбу. Will и повелительное звучат резко.'},
     {q:'Обращение в американском письме: Dear Mr. Reynolds___', o:[',',':','.'], c:1, x:'В US после обращения двоеточие, а после Mr ставят точку.'},
@@ -1542,7 +1607,7 @@ function xInit(){
     qz.innerHTML = qbar() + '<p class="qn">Вопрос ' + (qi + 1) + ' из ' + Q.length + '</p>' +
       '<p class="qq">' + esc(it.q).replace('___', '<u id="blank">___</u>') + '</p>' +
       '<div class="qo">' + it.o.map(function(o, i){ return '<button type="button" data-i="' + i + '">' + esc(o) + '</button>'; }).join('') + '</div>' +
-      '<div class="qx" id="qx"><svg class="ic"><use href="#i-brain"/></svg><span>Выбери вариант. Шпаргалка ниже, но ты справишься.</span></div>';
+      '<div class="qx" id="qx"><svg class="ic"><use href="#i-brain"/></svg><span>Выбери вариант ответа.</span></div>';
     $$('.qo button', qz).forEach(function(b){ b.onclick = function(){ answer(+b.dataset.i); }; });
     if(G) G.from($$('.qo button', qz), {y:20, scale:.95, duration:.5, ease:'back.out(2)', stagger:.06});
   }
@@ -1557,13 +1622,13 @@ function xInit(){
     if(ok) confetti(qz, 12);
     $('.qbar', qz).outerHTML = qbar();
     var nb = document.createElement('button'); nb.className = 'btn qnext'; nb.type = 'button';
-    nb.innerHTML = qi < Q.length - 1 ? 'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>' : 'Результат <svg class="ic"><use href="#i-trophy"/></svg>';
+    nb.innerHTML = qi < Q.length - 1 ? 'Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>' : 'Результат <svg class="ic"><use href="#i-arrow-right"/></svg>';
     nb.onclick = function(){ qi++; qi < Q.length ? drawQ() : done(); };
     qz.appendChild(nb); nb.focus({preventScroll:true});
   }
   function done(){
     var s = res.filter(Boolean).length, AD = !!document.getElementById('platform');
-    var msg = s === 6 ? 'Шесть из шести. Можно писать профессору.' : s >= 4 ? 'Почти. Перечитай обращения и даты. Там все и спотыкаются.' : 'Первый раз у всех так. Пролистай шпаргалку и попробуй ещё.';
+    var msg = s === 6 ? 'Шесть из шести. Можно писать профессору.' : s >= 4 ? 'Почти. Повтори обращения и даты. Там все и спотыкаются.' : 'Первый раз у всех так. Пролистай шпаргалку и попробуй ещё.';
     var link = AD ? '<a class="btn light" href="#platform">Что дальше →</a>' : '<a class="btn light" href="#cheat">Шпаргалка →</a>';
     qz.innerHTML = qbar() + '<div class="qres"><div class="score">' + s + '/6</div><p class="qq" style="margin:6px auto 0;max-width:22ch">' + msg + '</p><div class="cta-row" style="justify-content:center"><button type="button" class="btn" id="again"><svg class="ic"><use href="#i-rotate-ccw"/></svg> Ещё раз</button>' + link + '</div></div>';
     $('#again').onclick = function(){ qi = 0; res = []; drawQ(); };
